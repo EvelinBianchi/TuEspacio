@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="shortcut icon" href="../images/logo.png">
+    <title>Contacto</title>
+</head>
+<body id="contacto">
+
+    <header class="header">
+        <img src="../images/logo.png" class="header__logo" alt="Logo de Mi Espacio"> 
+        <h1 class="header__titulo">TU ESPACIO YOGA</h1> 
+        <!--LISTA NO ORDENADA-->
+        <nav class="header__nav">
+            <ul>
+                <li>
+                    <a href="../index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="./sobremi.html">SOBRE MI</a>
+                </li>
+                <li>
+                    <a href="./nuestroespacio.html">NUESTRO ESPACIO</a>
+                </li>
+                <li>
+                    <a href="./clases.html"> CLASES</a>
+                </li>
+                <li>
+                    <a href="./contacto.html">CONTACTO</a>
+                </li>
+            </ul> 
+        </nav>
+    </header>
+    
+    <section class="fcontacto">
+        <h1 class="tituloContactanos">CONTACTANOS</h1>
+        <!--FORMULARIO-->
+        <form class="formulario">
+            <fieldset> 
+                <legend>DATOS PERSONALES</legend>
+                <label for="Nombre">NOMBRE</label>
+                <input id="Nombre" type="text" placeholder="Ingresá tu nombre">
+                <label for="Apellido">APELLIDO</label>
+                <input id="Apellido" type="text" placeholder="Ingresá tu apellido">
+                <label>GENERO</label>
+                <select>
+                    <option>Femenino</option>
+                    <option>Masculino</option>
+                    <option>No binario</option>
+                </select>
+                <label for="Telefono">TELEFONO</label>
+                <input id="Telefono" type="tel" placeholder="Ingresá tu teléfono">
+                <label for="Mail">DIRECCION DE E-MAIL</label>
+                <input id="Mail" type="text" placeholder="Ingresá tu e-mail">
+            </fieldset>
+            <fieldset>
+                <legend>TU CONSULTA</legend>
+                <textarea id="Consulta" placeholder="Mensaje"></textarea>
+                <label for="Novedades">Deseo recibir novedades</label>
+                <input type="checkbox" checked>
+                <label for="Comunicaciones">Deseo que se contacten por:</label>
+                <input name="opcion"  type="radio">
+                <span>WhatsApp</span>
+                <input name="opcion" type="radio">
+                <span>E-mail</span>
+                <input name="opcion" type="radio">
+                <span>Llamada telefónica</span>
+            </fieldset>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Cancelar">
+        </form> 
+    </section>
+        
+    <!--IMAGENES-->
+    <aside class="grupoDeFotos">
+        <img class="imagenContacto" src="../images/yogacontacto2.webp" alt="Persona realizando yoga">
+        <img class="imagenContactoMedio" src="../images/yogacontacto1.webp" alt="Persona realizando yoga">
+        <img class="imagenContacto" src="../images/yogacontacto3.jpg" alt="Persona realizando yoga"> 
+    </aside>
+
+    
+  <!--PIE DE PAGINA-->
+  <footer>
+        <div>
+            <img src="../images/instagram.png" alt="logo de instagram" class="logosFooter">
+            <img src="../images/facebook.png" alt="logo de facebook" class="logosFooter">
+        </div>
+   </footer>
+
+</body>
+</html>

@@ -1,0 +1,565 @@
+/*RESET*/
+* {
+    margin: 0%;
+    padding: 0%;
+ }
+
+/*FUENTES*/
+@font-face {
+    font-family: alegreya-regular;
+    src: url(../fonts/AlegreyaSans-Regular.ttf);
+  }
+
+@font-face {
+    font-family: alegreya-ligth;
+    src: url(../fonts/AlegreyaSans-Light.ttf);
+  }
+
+/*HOME*/
+#home {
+  display: grid;
+  grid-template-areas: 
+  "header header header"
+  "espacio espacio espacio"
+  "beneficios beneficios beneficios"
+  "footer footer footer";
+  grid-template-rows: 50px, 1000px, 300px, 100px;
+  grid-template-columns: 400px,400px,400 px;
+  height: 100vh;
+  background-color: #F1FFF9;
+  background-size: cover;
+  background-repeat: no-repeat;
+  row-gap: 30px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  grid-area: header;
+  background-image: linear-gradient(to bottom, #347B5D, #8bf5c9 );
+  padding: 10px;
+}
+
+.header__logo {
+  width: 60px;
+  height: 60px;
+}
+
+.header__titulo {
+  position: relative;
+  color: #F1FFF9;
+  font-family: alegreya-regular;
+  left: 10px;
+}
+
+.header__nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header__nav ul li {
+  margin: 0;
+  padding: 20px;
+}
+ 
+.header__nav ul li a {
+  position: relative;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: alegreya-regular;
+  font-weight:bolder; 
+  font-size: 15px; 
+  left: 500px;
+}
+
+.header__nav ul li a:hover {
+  font-size: 17px;
+}
+
+/*TU ESPACIO*/
+ #espacio {
+  display: flex;
+  grid-area: espacio;
+  background-image: url(../images/fondomat.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.descripcion {
+  font-family: alegreya-ligth;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bolder;
+  text-align: center;
+  color: #06110c;
+  padding: 100px;
+}
+
+#beneficios {
+  grid-area: beneficios;
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+}
+
+.beneficiosTexto {
+  background-color: #4b9e7b;
+  opacity: 90%;
+  padding: 60px;
+}
+
+/*beneficios titulo*/
+.beneficios__subtitulo {
+  font-family: alegreya-regular;
+  text-decoration:underline;
+  text-align: center;
+}
+
+/*beneficios items*/
+.beneficios__lista {
+  font-family: alegreya-ligth;
+  font-style: italic;
+  font-size: 25px;
+  text-align: justify;
+}
+
+/*imagen beneficios*/
+.imagenBeneficios {
+  grid-area: imagenBeneficios;
+  width: 550px;
+  height: 350px;
+}
+
+/*FOOTER*/
+footer {
+  grid-area: footer;
+  display: flex;  background-image:url(../images/fondo3.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+  justify-content: start;
+}
+
+.logosFooter {
+  width: 60px;
+  padding: 20px;
+}
+
+/*SOBRE MI*/
+#sobreMi {
+  display: grid;
+  grid-template-areas: 
+  "header header header"
+  "biografia biografia biografia"
+  "centroDeFormacion centroDeFormacion centroDeFormacion"
+  "footer footer footer";
+  grid-template-rows: 50px, 800px, 400px, 100px;
+  grid-template-columns: 600px,600px,600px;
+  height: 100vh;
+  background-color: #F1FFF9;
+  background-size: cover;
+  background-repeat: no-repeat;
+  row-gap: 30px;
+}
+
+.biografia {
+  grid-area: biografia ;
+}
+
+.textoBiografia {
+  position: relative;
+  display: inline-block;
+  font-family: alegreya-ligth;
+  font-style: italic;
+  font-size: 25px;
+  text-align: center;  
+  background-color: #82b798;
+  background-size: cover;
+  padding: 10px;
+  align-self: flex-end;
+  z-index: 1;
+  width: 500px;
+  left: 70px;
+}
+
+/*Imagen Sivia 1*/
+.imagenSilvia {
+  position: relative;
+  left: 150px;
+}
+
+/*Imagen Sivia 2*/
+.imagenSilvia2 {
+  position: relative;
+  margin-right: 100px;
+}
+
+.centroDeFormacion {
+  grid-area: centroDeFormacion;
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+}
+
+.centroDeFormacion h2 {
+  font-family: alegreya-ligth;
+  font-style:normal;
+  font-size: 30px;
+  background-color: #347B5D;
+  border: #546b65 solid 5px;
+  border-radius: 2%;
+  width: 40%;
+  text-align: center;
+  opacity: 80%;
+  padding: 20px;
+}
+
+/*video Cey*/
+.videoCey {
+  width: 400px;
+  height: 200px;
+}
+
+/*NUESTRO ESPACIO*/
+#nuestroEspacio {
+  display: grid;
+  grid-template-areas: 
+  "header header header"
+  "titulo titulo titulo"
+  "fotos fotos fotos"
+  "footer footer footer";
+  grid-template-columns: 600px, 600px, 600px;
+  grid-template-rows: 50px, 100px, 300px, 300px;
+  height: 100vh;
+  background-color: #F1FFF9;
+  background-size: cover;
+  background-repeat: no-repeat;
+  row-gap: 30px;
+}
+
+.titulo {
+  grid-area: titulo;
+  color: #F1FFF9;
+  background-color: #347B5D;
+  border: #F1FFF9 solid 2px;
+  border-radius: 6px;
+  opacity: 90%;
+  width: 90%;
+  text-align: center;
+  font-family: alegreya-regular;
+  justify-self: center;
+}
+
+.imagenesEspacio {
+  grid-area: fotos;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.imagenesEspacio img {
+  border-radius: 2%;
+  margin: 10px;
+}
+
+/*CLASES*/
+#clases {
+  display: grid;
+  grid-template-areas: 
+  "header header header"
+  "horarios horarios horarios"
+  "imagenesClases imagenesClases imagenesClases"
+  "footer footer footer";
+  grid-template-columns: 600px, 600px, 600px;
+  grid-template-rows: 50px, 300px, 200px, 300px;
+  height: 100vh;
+  background-color: #F1FFF9;
+  background-size: cover;
+  background-repeat: no-repeat;
+  row-gap: 30px;
+}
+
+.horarios {
+  grid-area: horarios;
+  margin-left: 150px;
+}
+
+.titulos {
+  color: #F1FFF9;
+  background-color: #347B5D;
+  border: #F1FFF9 solid 2px;
+  border-radius: 6px;
+  width: 40%;
+  opacity: 90%;
+  text-align: center;
+  font-family: alegreya-regular;
+  margin-left: 250px;
+}
+
+/*Tabla*/
+.tabla {
+  background-color: #c5e4d7;
+  opacity: 80%;
+  padding: 40px;
+}
+
+/*Dias*/
+.tabla tr th {
+  padding: 20px 60px 20px 60px;
+  border: #347B5D solid 2px;
+  font-family: alegreya-regular;
+  font-size: 30px;
+}
+
+/*Horarios*/
+ .tabla tr td {
+  padding: 20px 40px 20px 40px;
+  border: #347B5D solid 2px;
+  font-family: alegreya-regular;
+  font-size: 30px;
+  text-align: center;
+}
+
+.imagenesClases {
+  grid-area: imagenesClases;
+  display: flex;
+  justify-content: space-around;
+}
+
+/*Imagenes Clases*/
+.imagenclase {
+  width: 500px;
+  height: 300px;
+}
+
+/*CONTACTO*/
+#contacto {
+  display: grid;
+  grid-template-areas: 
+  "header header"
+  "formulario grupoDeFotos"
+  "formulario grupoDeFotos"
+  "formulario grupoDeFotos"
+  "footer footer";
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: 50px, 300px, 300px, 300px, 50px;
+  height: 100vh;
+  background-color: #F1FFF9;
+  background-size: cover;
+  background-repeat: no-repeat;
+  row-gap: 30px;
+}
+
+.tituloContactanos {
+  color: #edeeed;
+  background-color: #347B5D;
+  border: #c5e4d7 solid 2px;
+  opacity: 90%;
+  width: 449px;
+  text-align: center;
+  font-family: alegreya-regular;   
+  margin-left: 149px;
+  padding: 06px;
+}
+
+.formulario {
+  position: relative;
+  grid-area: formulario;
+  background-color: #347B5D;
+  border: #c5e4d7 solid 2px;
+  width: 400px;
+  height: 500px;
+  font-family:alegreya-regular;
+  font-size: 20px;
+  color: #F1FFF9;
+  padding: 30px;
+  text-align: center;
+  left: 150px;
+}
+
+.formulario fieldset label {
+  display: block;
+}
+
+.formulario input {
+  padding: 06px;
+}
+
+.grupoDeFotos {
+  grid-area: grupoDeFotos;
+  display: flex;
+  flex-direction: column;
+}
+
+.imagenContactoMedio {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  left: 150px;
+}
+
+.imagenContacto {
+ position: relative;
+ width: 250px;
+ height: 200px;
+}
+
+/*VISTA MOBILE*/
+@media screen and (max-width: 599px) {
+
+ /*HOME*/
+  #home {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "espacio"
+    "beneficios"
+    "footer";
+    grid-template-rows: 50px, 100px, 100px, 50px;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  #espacio {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+ .descripcion {
+   padding: 40px;
+  }
+
+  #beneficios {
+    flex-wrap: wrap;
+  }
+
+  .beneficiosTexto {
+    padding: 30px;
+    margin: 10px;
+  }
+
+  .imagenBeneficios {
+    margin: 10px;
+  }
+
+  .biografia {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .textoBiografia {
+    padding: 20px;
+    align-self: flex-end;
+    width: 300px;
+    left: 10px;
+  }
+  
+  /*Imagen Sivia 1*/
+  .imagenSilvia {
+    left: 10px;
+  }
+  
+  /*Imagen Sivia 2*/
+  .imagenSilvia2 {
+    display: none;
+  }
+  
+  .centroDeFormacion {
+    flex-wrap: wrap;
+  }
+
+/*NUESTRO ESPACIO*/
+#nuestroEspacio {
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "titulo"
+  "fotos"
+  "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px, 100px, 300px, 50px;
+  row-gap: 10px;
+}
+
+/*CLASES*/
+#clases {
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "horarios"
+  "imagenesClases"
+  "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px, 100px, 100px, 50px;
+  row-gap: 10px;
+}
+
+.horarios {
+  margin-left: 10px;
+}
+
+/*Tabla*/
+.tabla {
+  padding: 20px;
+}
+
+/*Dias*/
+.tabla tr th {
+  padding: 10px 40px 10px 40px;
+}
+
+/*Horarios*/
+ .tabla tr td {
+  padding: 10px 30px 10px 30px;
+}
+
+.imagenesClases {
+  flex-wrap: wrap;
+}
+
+/*CONTACTO*/
+#contacto {
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "formulario"
+  "formulario"
+  "formulario"
+  "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px, 100px, 100px, 100px, 50px;
+  row-gap: 10px;
+}
+
+.grupoDeFotos {
+  display: none;
+}
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
