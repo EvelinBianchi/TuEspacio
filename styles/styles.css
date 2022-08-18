@@ -185,20 +185,44 @@ footer {
   z-index: 1;
   width: 500px;
   left: 70px;
+  animation-name: biografia;
+  animation-duration: 2s;
+  animation-iteration-count: initial;
+}
+
+@keyframes biografia {
+  50% {
+    transform: translateY(100px)}
 }
 
 /*Imagen Sivia 1*/
 .imagenSilvia {
   position: relative;
   left: 150px;
-}
+  animation-name: imagenSilvia;
+  animation-duration: 2s;
+  animation-iteration-count: initial;
+  }
+
 
 /*Imagen Sivia 2*/
 .imagenSilvia2 {
   position: relative;
   margin-right: 100px;
+  animation-name: imagenSilvia2;
+  animation-duration: 2s;
+  animation-iteration-count:initial;
 }
 
+@keyframes imagenSilvia {
+  50% {
+    transform: translateX(100px);}
+}
+
+@keyframes imagenSilvia2 {
+  50% {
+    transform: translateX(-100px);}
+}
 .centroDeFormacion {
   grid-area: centroDeFormacion;
   display: flex;
