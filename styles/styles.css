@@ -263,9 +263,13 @@ footer {
 }
 
 .imagenesEspacio img {
-  border-radius: 2%;
-  margin: 10px;
+  padding: 10px;
 }
+
+.imagenesEspacio img:hover {
+  padding: 01px;
+}
+
 
 /*CLASES*/
 #clases {
