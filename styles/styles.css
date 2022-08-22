@@ -6,148 +6,133 @@
 
 /*FUENTES*/
 @font-face {
-    font-family: alegreya-regular;
-    src: url(../fonts/AlegreyaSans-Regular.ttf);
+    font-family: garamond regular;
+    src: url(../fonts/EBGaramond-Regular.ttf);
   }
 
 @font-face {
-    font-family: alegreya-ligth;
-    src: url(../fonts/AlegreyaSans-Light.ttf);
+    font-family: garamond cursiva;
+    src: url(../fonts/EBGaramond-Italic.ttf);
   }
 
 /*HOME*/
 #home {
   display: grid;
   grid-template-areas: 
-  "header header header"
+  "navbar navbar navbar"
+  "imagenPrincipal imagenPrincipal imagenPrincipal"
   "espacio espacio espacio"
-  "beneficios beneficios beneficios"
   "footer footer footer";
-  grid-template-rows: 50px, 1000px, 300px, 100px;
-  grid-template-columns: 400px,400px,400 px;
+  grid-template-rows: 80px 350px 300px 80px;
+  grid-template-columns: 1fr 1fr 1fr;
   height: 100vh;
-  background-color: #F1FFF9;
-  background-size: cover;
-  background-repeat: no-repeat;
-  row-gap: 30px;
+  row-gap: 60px;
+  background-color: #ffffff;
 }
 
-header {
-  display: flex;
-  align-items: center;
-  grid-area: header;
-  background-image: linear-gradient(to bottom, #347B5D, #8bf5c9 );
-  padding: 10px;
+.navbar {
+  grid-area: navbar;
+  background-color: #ebf1f5;
+  padding: 40px;
 }
 
-.header__logo {
-  width: 60px;
-  height: 60px;
-}
-
-.header__titulo {
+.tuEspacio {
   position: relative;
-  color: #F1FFF9;
-  font-family: alegreya-regular;
-  left: 10px;
-}
-
-.header__nav ul {
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.header__nav ul li {
-  margin: 0;
-  padding: 20px;
-}
- 
-.header__nav ul li a {
-  position: relative;
-  color: #FFFFFF;
-  text-decoration: none;
-  font-family: alegreya-regular;
-  font-weight:bolder; 
-  font-size: 15px; 
+  text-align: center;
+  font-family: garamond regular;
   left: 500px;
 }
 
-.header__nav ul li a:hover {
-  font-size: 17px;
-}
-
-/*TU ESPACIO*/
- #espacio {
+#imagenPrincipal{
+  grid-area: imagenPrincipal;
   display: flex;
-  grid-area: espacio;
-  background-image: url(../images/fondomat.jpg);
+  flex-direction: row;
+  background-image: url(/images/campo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  justify-content: center;
-  margin-left: 200px;
-  margin-right: 200px;
-}
-
-.descripcion {
-  font-family: alegreya-ligth;
-  font-size: 30px;
-  font-style: italic;
-  font-weight: bolder;
-  text-align: center;
-  color: #06110c;
-  padding: 100px;
-}
-
-#beneficios {
-  grid-area: beneficios;
-  display: flex;
-  justify-content: space-around;
+  justify-content:space-around;
   align-items:center;
 }
 
-.beneficiosTexto {
-  background-color: #4b9e7b;
-  opacity: 90%;
-  padding: 60px;
+#imagenPrincipal img {
+  width: 250px;
+  height: 250px;
 }
 
-/*beneficios titulo*/
-.beneficios__subtitulo {
-  font-family: alegreya-regular;
-  text-decoration:underline;
+.yoga1 {
+  animation-name: yoga1;
+  animation-duration: 6s;
+  animation-iteration-count:initial;
+}
+
+@keyframes yoga1 {
+  0% {
+    transform: translateX(-80px);
+  }
+  50% {
+    transform: translateY(-80px);
+  }
+}
+
+.yoga2 {
+  animation-name: yoga2;
+  animation-duration: 8s;
+  animation-iteration-count:initial;
+}
+
+@keyframes yoga2 {
+  0% {
+    transform: translateY(70px);
+  }
+  50% {
+    transform: translateY(-70px);
+  }
+}
+
+.yoga3 {
+  animation-name: yoga3;
+  animation-duration: 6s;
+  animation-iteration-count:initial;
+}
+
+@keyframes yoga3 {
+  0% {
+    transform: translateX(80px);
+  }
+  50% {
+    transform: translateY(-80px);
+  }
+}
+
+#espacio {
+  grid-area: espacio;
+  font-family: garamond cursiva;
+  font-size: 30px;
   text-align: center;
-}
-
-/*beneficios items*/
-.beneficios__lista {
-  font-family: alegreya-ligth;
-  font-style: italic;
-  font-size: 25px;
-  text-align: justify;
-}
-
-/*imagen beneficios*/
-.imagenBeneficios {
-  grid-area: imagenBeneficios;
-  width: 550px;
-  height: 350px;
+  color: #0F2505;
+  padding: 80px;
 }
 
 /*FOOTER*/
 footer {
   grid-area: footer;
   display: flex;  
-  background-image:url(../images/fondo3.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 30px;
-  justify-content: start;
+  background-color:#0F2505;
+  justify-content: space-between;
+  margin: 0%;
+  padding: 0%;
+}
+
+.domicilio {
+  font-family: garamond regular;
+  font-size: 20px;
+  color: #ebf1f5;
+  align-self: center;
+  padding: 20px;
 }
 
 .logosFooter {
-  width: 60px;
+  width: 70px;
   padding: 20px;
 }
 

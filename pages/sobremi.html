@@ -10,29 +10,39 @@
     <title>Sobre Mi</title>
 </head>
 <body id="sobreMi">
-
-    <header class="header">
-        <img src="../images/logo.png" class="header__logo" alt="Logo de Mi Espacio"> 
-        <h1 class="header__titulo">TU ESPACIO YOGA</h1> 
-        <!--LISTA NO ORDENADA-->
-        <nav class="header__nav">
-            <ul>
-                <li>
-                    <a href="../index.html">HOME</a>
-                </li>
-                <li>
-                    <a href="./sobremi.html">SOBRE MI</a>
-                </li>
-                <li>
-                    <a href="./nuestroespacio.html">NUESTRO ESPACIO</a>
-                </li>
-                <li>
-                    <a href="./clases.html"> CLASES</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">CONTACTO</a>
-                </li>
-            </ul>
+    <header id="header">
+        <nav class="navbar fixed-top">
+            <div class="container-fluid">
+              <h1 class="tuEspacio">TU ESPACIO</h1>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">TU ESPACIO Yoga</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./sobremi.html">Sobre Mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./clases.html">Clases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./nuestroespacio.html">Nuestro Espacio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+            </div>
         </nav>
     </header>
 
@@ -51,11 +61,12 @@
     
     <!--PIE DE PAGINA-->
     <footer>
-     <div>
-        <img src="../images/instagram.png" alt="logo de instagram" class="logosFooter">
-        <img src="../images/facebook.png" alt="logo de facebook" class="logosFooter">
+        <p class="domicilio">Av. 9 de Julio 440 - LINCOLN - BUENOS AIRES</p>
+        <div>
+          <img src="./images/instagram.png" alt="logo de instagram" class="logosFooter">
+          <img src="./images/facebook.png" alt="logo de facebook" class="logosFooter">
         </div>
-    </footer>
+      </footer>
 
 </body>
 </html>
