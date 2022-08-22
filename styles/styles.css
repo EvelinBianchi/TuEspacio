@@ -141,7 +141,7 @@ footer {
   display: grid;
   grid-template-areas: 
   "header header"
-  "tituloSobreMi tituloSobreMi"
+  "tituloNubes tituloNubes"
   "silviaTorres silviaTorres"
   "biografia biografia"
   "footer footer";
@@ -152,11 +152,8 @@ footer {
   row-gap: 60px;
 }
 
-.tituloSobreMi {
-  grid-area: tituloSobreMi;
-}
-
-.tituloSobreMi h2 {
+.tituloNubes {
+  grid-area: tituloNubes;
   font-family: garamond cursiva;
   color: #000000;
   background-image: url(../images/campo.jpg);
@@ -187,6 +184,11 @@ footer {
   height: 500px;
 }
 
+.imagenSilvia:hover {
+  width: 420px;
+  height: 520px;
+}
+
 #silviaTorres {
   grid-area: silviaTorres;
   display: flex;
@@ -196,35 +198,29 @@ footer {
   justify-content: space-around;
 }
 
-
 /*NUESTRO ESPACIO*/
 #nuestroEspacio {
   display: grid;
   grid-template-areas: 
   "header header header"
-  "titulo titulo titulo"
+  "tituloNubes tituloNubes tituloNubes"
+  "descripcionEspacio descripcionEspacio descripcionEspacio"
   "fotos fotos fotos"
   "footer footer footer";
-  grid-template-columns: 600px, 600px, 600px;
-  grid-template-rows: 50px, 100px, 300px, 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 80px 100px 200px 600px 90px;
   height: 100vh;
   background-color: #F1FFF9;
-  background-size: cover;
-  background-repeat: no-repeat;
   row-gap: 30px;
 }
 
-.titulo {
-  grid-area: titulo;
-  color: #F1FFF9;
-  background-color: #347B5D;
-  border: #F1FFF9 solid 2px;
-  border-radius: 6px;
-  opacity: 90%;
-  width: 90%;
-  text-align: center;
-  font-family: alegreya-regular;
-  justify-self: center;
+.descripcionEspacio {
+  grid-area: descripcionEspacio;
+  color: #0F2505;
+  font-family: garamond cursiva;
+  font-size: 25px;
+  padding: 50px;
+  text-align:justify;
 }
 
 .imagenesEspacio {
