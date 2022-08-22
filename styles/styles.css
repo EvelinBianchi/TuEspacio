@@ -23,7 +23,7 @@
   "imagenPrincipal imagenPrincipal imagenPrincipal"
   "espacio espacio espacio"
   "footer footer footer";
-  grid-template-rows: 80px 350px 300px 80px;
+  grid-template-rows: 80px 350px 400px 90px;
   grid-template-columns: 1fr 1fr 1fr;
   height: 100vh;
   row-gap: 60px;
@@ -117,7 +117,8 @@
 footer {
   grid-area: footer;
   display: flex;  
-  background-color:#0F2505;
+  background-color:#C8CA83;
+  align-content: center;
   justify-content: space-between;
   margin: 0%;
   padding: 0%;
@@ -127,112 +128,74 @@ footer {
   font-family: garamond regular;
   font-size: 20px;
   color: #ebf1f5;
-  align-self: center;
-  padding: 20px;
+  padding: 30px;
 }
 
 .logosFooter {
-  width: 70px;
-  padding: 20px;
+  width: 120px;
+  height: 100px;
 }
 
 /*SOBRE MI*/
 #sobreMi {
   display: grid;
   grid-template-areas: 
-  "header header header"
-  "biografia biografia biografia"
-  "centroDeFormacion centroDeFormacion centroDeFormacion"
-  "footer footer footer";
-  grid-template-rows: 50px, 800px, 400px, 100px;
-  grid-template-columns: 600px,600px,600px;
+  "header header"
+  "tituloSobreMi tituloSobreMi"
+  "silviaTorres silviaTorres"
+  "biografia biografia"
+  "footer footer";
+  grid-template-rows: 80px 100px 500px 500px 90px;
+  grid-template-columns: 1fr 1fr;
   height: 100vh;
-  background-color: #F1FFF9;
+  background-color: #ffffff;
+  row-gap: 60px;
+}
+
+.tituloSobreMi {
+  grid-area: tituloSobreMi;
+}
+
+.tituloSobreMi h2 {
+  font-family: garamond cursiva;
+  color: #000000;
+  background-image: url(../images/campo.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
-  row-gap: 30px;
+  padding: 40px;
 }
 
 .biografia {
+  display: flex;
+  flex-direction: row;
   grid-area: biografia;
+  font-family: garamond cursiva;
+  font-size: 25px;  
+  justify-content: space-around;
 }
 
 .textoBiografia {
-  position: relative;
-  display: inline-block;
-  font-family: alegreya-ligth;
-  font-style: italic;
+  color: #0F2505;
+  font-family: garamond cursiva;
   font-size: 25px;
-  text-align: center;  
-  background-color: #82b798;
-  background-size: cover;
-  padding: 10px;
-  align-self: flex-end;
-  z-index: 1;
   width: 500px;
-  left: 70px;
-  animation-name: biografia;
-  animation-duration: 2s;
-  animation-iteration-count: initial;
+  padding: 50px;
+  text-align:justify;
 }
 
-@keyframes biografia {
-  50% {
-    transform: translateY(100px)}
-}
-
-/*Imagen Sivia 1*/
 .imagenSilvia {
-  position: relative;
-  left: 150px;
-  animation-name: imagenSilvia;
-  animation-duration: 2s;
-  animation-iteration-count: initial;
-  }
-
-/*Imagen Sivia 2*/
-.imagenSilvia2 {
-  position: relative;
-  margin-right: 100px;
-  animation-name: imagenSilvia2;
-  animation-duration: 2s;
-  animation-iteration-count:initial;
-}
-
-@keyframes imagenSilvia {
-  50% {
-    transform: translateX(100px);}
-}
-
-@keyframes imagenSilvia2 {
-  50% {
-    transform: translateX(-100px);}
-}
-.centroDeFormacion {
-  grid-area: centroDeFormacion;
-  display: flex;
-  justify-content: space-around;
-  margin: 50px;
-}
-
-.centroDeFormacion h2 {
-  font-family: alegreya-ligth;
-  font-style:normal;
-  font-size: 30px;
-  background-color: #347B5D;
-  border: #546b65 solid 5px;
-  border-radius: 2%;
-  width: 40%;
-  text-align: center;
-  opacity: 80%;
-  padding: 20px;
-}
-
-/*video Cey*/
-.videoCey {
   width: 400px;
-  height: 200px;
+  height: 500px;
 }
+
+#silviaTorres {
+  grid-area: silviaTorres;
+  display: flex;
+  flex-direction: row;
+  font-family: garamond cursiva;
+  font-size: 25px;  
+  justify-content: space-around;
+}
+
 
 /*NUESTRO ESPACIO*/
 #nuestroEspacio {
@@ -435,10 +398,6 @@ footer {
     grid-template-rows: 50px, 100px, 100px, 50px;
     grid-template-columns: 1fr;
     row-gap: 10px;
-  }
-
-  .header__nav {
-    display: none;
   }
 
   #espacio {
