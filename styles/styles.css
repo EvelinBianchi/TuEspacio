@@ -243,11 +243,12 @@ footer {
   display: grid;
   grid-template-areas: 
   "header header header"
+  "tituloNubes tituloNubes tituloNubes"
   "horarios horarios horarios"
   "imagenesClases imagenesClases imagenesClases"
   "footer footer footer";
-  grid-template-columns: 600px, 600px, 600px;
-  grid-template-rows: 50px, 300px, 200px, 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 80px 100px 400px 400px 90px;
   height: 100vh;
   background-color: #F1FFF9;
   background-size: cover;
@@ -255,43 +256,40 @@ footer {
   row-gap: 30px;
 }
 
-.horarios {
-  grid-area: horarios;
-  margin-left: 150px;
+.descripcionClases {
+  color: #0F2505;
+  font-family: garamond cursiva;
+  font-size: 25px;
+  padding: 50px;
+  text-align:center;
 }
 
-.titulos {
-  color: #F1FFF9;
-  background-color: #347B5D;
-  border: #F1FFF9 solid 2px;
-  border-radius: 6px;
-  width: 40%;
-  opacity: 90%;
-  text-align: center;
-  font-family: alegreya-regular;
-  margin-left: 250px;
+.horarios {
+  grid-area: horarios;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*Tabla*/
 .tabla {
-  background-color: #c5e4d7;
+  background-color: #C8DBDF;
   opacity: 80%;
-  padding: 40px;
 }
 
 /*Dias*/
 .tabla tr th {
   padding: 20px 60px 20px 60px;
-  border: #347B5D solid 2px;
-  font-family: alegreya-regular;
+  border: #6ac3d4 solid 2px;
+  font-family: garamond regular;
   font-size: 30px;
 }
 
 /*Horarios*/
  .tabla tr td {
   padding: 20px 40px 20px 40px;
-  border: #347B5D solid 2px;
-  font-family: alegreya-regular;
+  border: #6ac3d4 solid 2px;
+  font-family: garamond regular;
   font-size: 30px;
   text-align: center;
 }
@@ -300,6 +298,7 @@ footer {
   grid-area: imagenesClases;
   display: flex;
   justify-content: space-around;
+  padding: 80px;
 }
 
 /*Imagenes Clases*/
