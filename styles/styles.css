@@ -19,7 +19,7 @@
 #home {
   display: grid;
   grid-template-areas: 
-  "navbar navbar navbar"
+  "header header header"
   "imagenPrincipal imagenPrincipal imagenPrincipal"
   "espacio espacio espacio"
   "footer footer footer";
@@ -27,22 +27,26 @@
   grid-template-columns: 1fr 1fr 1fr;
   height: 100vh;
   row-gap: 60px;
-  background-color: #ffffff;
+  background-color: #F1FFF9;
 }
 
+#header {
+  grid-area: header;
+}
+
+/*Barra de navegacion*/
 .navbar {
-  grid-area: navbar;
   background-color: #ebf1f5;
   padding: 40px;
 }
-
+/*Titulo NAV*/
 .tuEspacio {
   position: relative;
   text-align: center;
   font-family: garamond regular;
   left: 500px;
 }
-
+/*Imagen home con animacion*/
 #imagenPrincipal{
   grid-area: imagenPrincipal;
   display: flex;
@@ -103,7 +107,7 @@
     transform: translateY(-80px);
   }
 }
-
+/*Texto descripcion de tu espacio*/
 #espacio {
   grid-area: espacio;
   font-family: garamond cursiva;
@@ -148,10 +152,10 @@ footer {
   grid-template-rows: 80px 100px 500px 500px 90px;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
-  background-color: #ffffff;
   row-gap: 60px;
+  background-color: #F1FFF9;
 }
-
+/*Todos los titulos de las paginas excepto HOME*/
 .tituloNubes {
   grid-area: tituloNubes;
   font-family: garamond cursiva;
@@ -160,7 +164,7 @@ footer {
   background-size: cover;
   padding: 40px;
 }
-
+/*Imagen y descrpcion*/
 .biografia {
   display: flex;
   flex-direction: row;
@@ -188,7 +192,7 @@ footer {
   width: 420px;
   height: 520px;
 }
-
+/*Imagen y descripcion*/
 #silviaTorres {
   grid-area: silviaTorres;
   display: flex;
@@ -213,7 +217,7 @@ footer {
   background-color: #F1FFF9;
   row-gap: 30px;
 }
-
+/*Texto describiendo el espacio*/
 .descripcionEspacio {
   grid-area: descripcionEspacio;
   color: #0F2505;
@@ -222,7 +226,7 @@ footer {
   padding: 50px;
   text-align:justify;
 }
-
+/*Imagenes del espacio*/
 .imagenesEspacio {
   grid-area: fotos;
   display: flex;
@@ -292,6 +296,7 @@ footer {
   text-align: center;
 }
 
+/*Imagenes Clases*/
 .imagenesClases {
   grid-area: imagenesClases;
   display: flex;
@@ -299,7 +304,6 @@ footer {
   padding: 80px;
 }
 
-/*Imagenes Clases*/
 .imagenclase {
   width: 500px;
   height: 300px;
@@ -316,13 +320,14 @@ footer {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 80px 100px 700px 90px;
   background-color: #F1FFF9;
-  height: 100vh;
+  height: 300px;
   row-gap: 60px;
 }
 
 .formulario {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   grid-area: formulario;
   background-color: #C8DBDF;
   border: #6ac3d4 solid 2px;
@@ -331,18 +336,22 @@ footer {
   font-size: 20px;
   color: #000000;
   text-align: center;
-  margin-top: 280px;
+  margin-top: 260px;
 }
 
 .formulario fieldset label {
+  padding: 5px;
   display: block;
-  margin: 10px;
 }
 
-.formulario input {
-  padding: 1px;
+.formulario fieldset input {
+  padding: 2px;
 }
 
+.formulario fieldset textarea {
+  padding: 30px;
+}
+/*Datos espacio*/
 .datos {
   display: flex;
   flex-direction: column;
@@ -354,138 +363,6 @@ footer {
   text-align:center;
 }
 
-/*VISTA MOBILE*/
-@media screen and (max-width: 599px) {
-
- /*HOME*/
-  #home {
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "espacio"
-    "beneficios"
-    "footer";
-    grid-template-rows: 50px, 100px, 100px, 50px;
-    grid-template-columns: 1fr;
-    row-gap: 10px;
-  }
-
-  #espacio {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
- .descripcion {
-   padding: 40px;
-  }
-
-  #beneficios {
-    flex-wrap: wrap;
-  }
-
-  .beneficiosTexto {
-    padding: 30px;
-    margin: 10px;
-  }
-
-  .imagenBeneficios {
-    margin: 10px;
-  }
-
-  .biografia {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .textoBiografia {
-    padding: 20px;
-    align-self: flex-end;
-    width: 300px;
-    left: 10px;
-  }
-  
-  /*Imagen Sivia 1*/
-  .imagenSilvia {
-    left: 10px;
-  }
-  
-  /*Imagen Sivia 2*/
-  .imagenSilvia2 {
-    display: none;
-  }
-  
-  .centroDeFormacion {
-    flex-wrap: wrap;
-  }
-
-/*NUESTRO ESPACIO*/
-#nuestroEspacio {
-  display: grid;
-  grid-template-areas: 
-  "header"
-  "titulo"
-  "fotos"
-  "footer";
-  grid-template-columns: 1fr;
-  grid-template-rows: 50px, 100px, 300px, 50px;
-  row-gap: 10px;
-}
-
-/*CLASES*/
-#clases {
-  display: grid;
-  grid-template-areas: 
-  "header"
-  "horarios"
-  "imagenesClases"
-  "footer";
-  grid-template-columns: 1fr;
-  grid-template-rows: 50px, 100px, 100px, 50px;
-  row-gap: 10px;
-}
-
-.horarios {
-  margin-left: 10px;
-}
-
-/*Tabla*/
-.tabla {
-  padding: 20px;
-}
-
-/*Dias*/
-.tabla tr th {
-  padding: 10px 40px 10px 40px;
-}
-
-/*Horarios*/
- .tabla tr td {
-  padding: 10px 30px 10px 30px;
-}
-
-.imagenesClases {
-  flex-wrap: wrap;
-}
-
-/*CONTACTO*/
-#contacto {
-  display: grid;
-  grid-template-areas: 
-  "header"
-  "formulario"
-  "formulario"
-  "formulario"
-  "footer";
-  grid-template-columns: 1fr;
-  grid-template-rows: 50px, 100px, 100px, 100px, 50px;
-  row-gap: 10px;
-}
-
-.grupoDeFotos {
-  display: none;
-}
-
- }
 
 
 
