@@ -1,3 +1,4 @@
+/*VISTA MOBILE*/
 /*RESET*/
 * {
     margin: 0%;
@@ -19,14 +20,14 @@
 #home {
   display: grid;
   grid-template-areas: 
-  "header header header"
-  "imagenPrincipal imagenPrincipal imagenPrincipal"
-  "espacio espacio espacio"
-  "footer footer footer";
-  grid-template-rows: 80px 350px 400px 90px;
-  grid-template-columns: 1fr 1fr 1fr;
+  "header"
+  "imagenPrincipal"
+  "espacio"
+  "footer";
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   height: 100vh;
-  row-gap: 60px;
+  row-gap: 10px;
   background-color: #F1FFF9;
 }
 
@@ -381,6 +382,32 @@ footer {
   padding: 50px;
   text-align:center;
 }
+
+/*VISTA TABLET*/
+@media screen and (min-width: 600px) {
+  
+}
+
+
+
+
+
+/*VISTA DESKTOP*/
+@media screen and (min-width: 1200px) {
+  #home {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "imagenPrincipal imagenPrincipal imagenPrincipal"
+    "espacio espacio espacio"
+    "footer footer footer";
+    grid-template-rows: 80px 350px 400px 90px;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100vh;
+    row-gap: 60px;
+  }
+}
+
 
 
 
