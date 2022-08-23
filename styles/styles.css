@@ -39,6 +39,26 @@
   background-color: #ebf1f5;
   padding: 40px;
 }
+
+/*Menu haburguesa*/
+.offcanvas {
+  background-color: #ebf1f5;
+}
+
+/*Titulo menu hamburguesa*/
+.offcanvas-title {
+  font-family: garamond regular;
+  padding: 5px;
+}
+
+/*Links menu hamburguesa*/
+.nav-link {
+  font-family: garamond regular;
+  padding: 10px;
+  font-size: 20px;
+  color: #000000;
+}
+
 /*Titulo NAV*/
 .tuEspacio {
   position: relative;
@@ -215,7 +235,7 @@ footer {
   grid-template-rows: 80px 100px 200px 600px 90px;
   height: 100vh;
   background-color: #F1FFF9;
-  row-gap: 30px;
+  row-gap: 60px;
 }
 /*Texto describiendo el espacio*/
 .descripcionEspacio {
@@ -318,7 +338,7 @@ footer {
   "datos formulario"
   "footer footer";
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 80px 100px 700px 90px;
+  grid-template-rows: 80px 100px 750px 90px;
   background-color: #F1FFF9;
   height: 300px;
   row-gap: 60px;
@@ -336,7 +356,6 @@ footer {
   font-size: 20px;
   color: #000000;
   text-align: center;
-  margin-top: 260px;
 }
 
 .formulario fieldset label {
