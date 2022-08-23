@@ -251,9 +251,7 @@ footer {
   grid-template-rows: 80px 100px 400px 400px 90px;
   height: 100vh;
   background-color: #F1FFF9;
-  background-size: cover;
-  background-repeat: no-repeat;
-  row-gap: 30px;
+  row-gap: 60px;
 }
 
 .descripcionClases {
@@ -312,71 +310,48 @@ footer {
   display: grid;
   grid-template-areas: 
   "header header"
-  "formulario grupoDeFotos"
-  "formulario grupoDeFotos"
-  "formulario grupoDeFotos"
+  "tituloNubes tituloNubes"
+  "datos formulario"
   "footer footer";
-  grid-template-columns: 1fr, 1fr;
-  grid-template-rows: 50px, 300px, 300px, 300px, 50px;
-  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 80px 100px 700px 90px;
   background-color: #F1FFF9;
-  background-size: cover;
-  background-repeat: no-repeat;
-  row-gap: 30px;
-}
-
-.tituloContactanos {
-  color: #edeeed;
-  background-color: #347B5D;
-  border: #c5e4d7 solid 2px;
-  opacity: 90%;
-  width: 449px;
-  text-align: center;
-  font-family: alegreya-regular;   
-  margin-left: 149px;
-  padding: 06px;
+  height: 100vh;
+  row-gap: 60px;
 }
 
 .formulario {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   grid-area: formulario;
-  background-color: #347B5D;
-  border: #c5e4d7 solid 2px;
-  width: 400px;
-  height: 500px;
-  font-family:alegreya-regular;
+  background-color: #C8DBDF;
+  border: #6ac3d4 solid 2px;
+  width: 500px;
+  font-family:garamond regular;
   font-size: 20px;
-  color: #F1FFF9;
-  padding: 30px;
+  color: #000000;
   text-align: center;
-  left: 150px;
+  margin-top: 280px;
 }
 
 .formulario fieldset label {
   display: block;
+  margin: 10px;
 }
 
 .formulario input {
-  padding: 06px;
+  padding: 1px;
 }
 
-.grupoDeFotos {
-  grid-area: grupoDeFotos;
+.datos {
   display: flex;
   flex-direction: column;
-}
-
-.imagenContactoMedio {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  left: 150px;
-}
-
-.imagenContacto {
- position: relative;
- width: 250px;
- height: 200px;
+  grid-area: datos;
+  color: #0F2505;
+  font-family: garamond cursiva;
+  font-size: 25px;
+  padding: 50px;
+  text-align:center;
 }
 
 /*VISTA MOBILE*/
