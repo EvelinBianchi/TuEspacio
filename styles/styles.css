@@ -69,15 +69,15 @@
 }
 /*Imagen home con animacion*/
 .imagenPrincipal{
-  grid-area: imagenPrincipal;
-  display: flex;
-  flex-direction: row;
-  background-size: cover;
-  background-repeat: no-repeat;
-  justify-content:space-around;
-  align-items:center;
-  background-image: url(/images/campo.jpg);
-}
+    grid-area: imagenPrincipal;
+    display: flex;
+    flex-direction: row;
+    background-image: url(/images/campo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content:space-around;
+    align-items:center;
+  }
 
 .imagenPrincipal img {
   width: 250px;
