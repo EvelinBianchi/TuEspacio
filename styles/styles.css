@@ -17,22 +17,10 @@
 
 /*HOME*/
 #home {
-  display: grid;
-  grid-template-areas: 
-  "header header header"
-  "imagenPrincipal imagenPrincipal imagenPrincipal"
-  "espacio espacio espacio"
-  "footer footer footer";
-  grid-template-rows: 80px 350px 400px 90px;
-  grid-template-columns: 1fr 1fr 1fr;
   height: 100vh;
-  row-gap: 60px;
   background-color: #F1FFF9;
 }
 
-#header {
-  grid-area: header;
-}
 
 /*Barra de navegacion*/
 .navbar {
@@ -68,7 +56,6 @@
 }
 /*Imagen home con animacion*/
 #imagenPrincipal{
-  grid-area: imagenPrincipal;
   display: flex;
   flex-direction: row;
   background-image:url(/images/campo.jpg);
@@ -129,7 +116,6 @@
 }
 /*Texto descripcion de tu espacio*/
 #espacio {
-  grid-area: espacio;
   font-family: garamond cursiva;
   font-size: 30px;
   text-align: center;
@@ -139,7 +125,6 @@
 
 /*FOOTER*/
 footer {
-  grid-area: footer;
   display: flex;  
   background-color:#C8CA83;
   align-content: center;
@@ -174,33 +159,22 @@ footer {
 
 /*SOBRE MI*/
 #sobreMi {
-  display: grid;
-  grid-template-areas: 
-  "header header"
-  "tituloNubes tituloNubes"
-  "silviaTorres silviaTorres"
-  "biografia biografia"
-  "footer footer";
-  grid-template-rows: 80px 100px 500px 500px 90px;
-  grid-template-columns: 1fr 1fr;
   height: 100vh;
-  row-gap: 60px;
   background-color: #F1FFF9;
 }
 /*Todos los titulos de las paginas excepto HOME*/
 .tituloNubes {
-  grid-area: tituloNubes;
   font-family: garamond cursiva;
   color: #000000;
-  background-image: url(../images/campo.jpg);
+  background-image: url(../images/cielo.jpg);
   background-size: cover;
-  padding: 40px;
+  padding: 80px;
+  font-size: 50px;
 }
 /*Imagen y descrpcion*/
 .biografia {
   display: flex;
   flex-direction: row;
-  grid-area: biografia;
   font-family: garamond cursiva;
   font-size: 25px;  
   justify-content: space-around;
@@ -226,7 +200,6 @@ footer {
 }
 /*Imagen y descripcion*/
 #silviaTorres {
-  grid-area: silviaTorres;
   display: flex;
   flex-direction: row;
   font-family: garamond cursiva;
@@ -236,22 +209,11 @@ footer {
 
 /*NUESTRO ESPACIO*/
 #nuestroEspacio {
-  display: grid;
-  grid-template-areas: 
-  "header header header"
-  "tituloNubes tituloNubes tituloNubes"
-  "descripcionEspacio descripcionEspacio descripcionEspacio"
-  "fotos fotos fotos"
-  "footer footer footer";
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 80px 100px 200px 600px 90px;
   height: 100vh;
   background-color: #F1FFF9;
-  row-gap: 60px;
 }
 /*Texto describiendo el espacio*/
 .descripcionEspacio {
-  grid-area: descripcionEspacio;
   color: #0F2505;
   font-family: garamond cursiva;
   font-size: 25px;
@@ -260,7 +222,6 @@ footer {
 }
 /*Imagenes del espacio*/
 .imagenesEspacio {
-  grid-area: fotos;
   display: flex;
   flex-flow: wrap;
   justify-content: center;
@@ -276,15 +237,6 @@ footer {
 
 /*CLASES*/
 #clases {
-  display: grid;
-  grid-template-areas: 
-  "header header header"
-  "tituloNubes tituloNubes tituloNubes"
-  "horarios horarios horarios"
-  "imagenesClases imagenesClases imagenesClases"
-  "footer footer footer";
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 80px 100px 400px 400px 90px;
   height: 100vh;
   background-color: #F1FFF9;
   row-gap: 60px;
@@ -299,7 +251,6 @@ footer {
 }
 
 .horarios {
-  grid-area: horarios;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -330,7 +281,6 @@ footer {
 
 /*Imagenes Clases*/
 .imagenesClases {
-  grid-area: imagenesClases;
   display: flex;
   justify-content: space-around;
   padding: 80px;
@@ -343,24 +293,14 @@ footer {
 
 /*CONTACTO*/
 #contacto {
-  display: grid;
-  grid-template-areas: 
-  "header header"
-  "tituloNubes tituloNubes"
-  "datos formulario"
-  "footer footer";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 80px 100px 750px 90px;
   background-color: #F1FFF9;
   height: 300px;
-  row-gap: 60px;
 }
 
 .formulario {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  grid-area: formulario;
   background-color: #C8DBDF;
   border: #6ac3d4 solid 2px;
   width: 500px;
@@ -386,7 +326,6 @@ footer {
 .datos {
   display: flex;
   flex-direction: column;
-  grid-area: datos;
   color: #0F2505;
   font-family: garamond cursiva;
   font-size: 25px;
