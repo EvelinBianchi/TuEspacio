@@ -72,11 +72,11 @@
   grid-area: imagenPrincipal;
   display: flex;
   flex-direction: row;
-  background-image:url(/images/flores.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   justify-content:space-around;
   align-items:center;
+  background-color: #0F2505;
 }
 
 #imagenPrincipal img {
