@@ -28,7 +28,6 @@
   grid-template-columns: 1fr;
   height: 100vh;
   row-gap: 10px;
-  background-color: #F1FFF9;
 }
 
 #header {
@@ -68,7 +67,7 @@
   left: 500px;
 }
 /*Imagen home con animacion*/
-#imagenPrincipal{
+.imagenPrincipal{
   grid-area: imagenPrincipal;
   display: flex;
   flex-direction: row;
@@ -76,10 +75,10 @@
   background-repeat: no-repeat;
   justify-content:space-around;
   align-items:center;
-  background-color: #0F2505;
+  background-image: url(/images/campo.jpg);
 }
 
-#imagenPrincipal img {
+.imagenPrincipal img {
   width: 250px;
   height: 250px;
 }
