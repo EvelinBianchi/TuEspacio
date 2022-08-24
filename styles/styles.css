@@ -148,6 +148,18 @@ footer {
   padding: 0%;
 }
 
+.iconos a {
+  text-decoration: none;
+  font-size: 40px;
+  color: #F1FFF9;
+  margin: 10px;
+}
+
+.iconos a i:hover {
+  transform: scale(1.3);
+  transition: all 0.5s ;
+}
+
 .domicilio {
   font-family: garamond regular;
   font-size: 20px;
@@ -209,8 +221,8 @@ footer {
 }
 
 .imagenSilvia:hover {
-  width: 420px;
-  height: 520px;
+  transform: scale(1.1);
+  transition: all 0.5s ;
 }
 /*Imagen y descripcion*/
 #silviaTorres {
