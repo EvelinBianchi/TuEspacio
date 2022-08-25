@@ -11,11 +11,11 @@
     <link rel="shortcut icon" href="../images/logo.png">
     <title>Tu Espacio | Yoga</title>
 </head>
-<body id="sobreMi">
+<body id="sobreMi" class="container-fluid">
 
     <!--ENCABEZADO-->
-    <header id="header">
-        <nav class="navbar fixed-top">
+    <header id="header" class="row">
+        <nav class="navbar fixed-top col">
             <div class="container-fluid">
               <h1 class="tuEspacio">TU ESPACIO</h1>
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -51,29 +51,31 @@
     </header>
 
     <!--TITULO CON CIELO DE FONDO-->
-    <section class="tituloNubes">
-        <h2>Sobre mi</h2>
+    <section class="tituloNubes row">
+        <h2 class="col">Sobre mi</h2>
     </section>
 
     <!--TEXTO E IMAGEN SILVIA TORRES-->
-    <section id="silviaTorres">
-        <img src="../images/SilviaTorres.jpg" alt="Instructora Silvia Torres" class="imagenSilvia">
-        <p class="textoBiografia">Mi nombre es Silvia Torres, soy instructora de Yoga desde el año 2012. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolorum minima sapiente eum aut. Voluptatum, minus eos facilis tempore quia soluta, ad incidunt accusamus aspernatur alias rerum provident ipsum quisquam!.</p>
+    <section class="biografia row">
+        <img src="../images/SilviaTorres.jpg" alt="Instructora Silvia Torres" class="imagenSilvia col-6">
+        <p class="textoBiografia col-6">Mi nombre es Silvia Torres, soy instructora de Yoga desde el año 2012. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolorum minima sapiente eum aut. Voluptatum, minus eos facilis tempore quia soluta, ad incidunt accusamus aspernatur alias rerum provident ipsum quisquam!.</p>
     </section>
 
     <!--TEXTO Y FORMACION SILVIA TORRES-->
-    <aside class="biografia">     
-        <p class="textoBiografia">Me formé en el <a href="https://ceyyoga.com.ar" target="_blank">CYE</a>  (Centro de Eutonia y Yogaterapia) Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, ullam eaque. Aperiam cupiditate, officiis autem consequatur iste, dolorem sapiente maxime hic quaerat, vitae quos exercitationem ipsum culpa blanditiis cumque excepturi!</p>
-        <img src="../images/SilviaTorres2.jpg" alt="Instructoras Silvia Torres" class="imagenSilvia">
+    <aside class="biografia row">     
+        <p class="textoBiografia col-6">Me formé en el <a href="https://ceyyoga.com.ar" target="_blank">CYE</a>  (Centro de Eutonia y Yogaterapia) Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, ullam eaque. Aperiam cupiditate, officiis autem consequatur iste, dolorem sapiente maxime hic quaerat, vitae quos exercitationem ipsum culpa blanditiis cumque excepturi!</p>
+        <img src="../images/SilviaTorres2.jpg" alt="Instructoras Silvia Torres" class="imagenSilvia col-6">
     </aside>
     
-    <!--PIE DE PAGINA-->
-    <footer>
-        <p class="domicilio">Av. 9 de Julio 440 - LINCOLN - BUENOS AIRES</p>
-        <div class="iconos m-3">
-          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        </div>
+   <!--PIE DE PAGINA-->
+    <footer class="row">
+     <div class=" domicilio col-6">
+       <p>Av. 9 de Julio 440 - LINCOLN - BUENOS AIRES</p>
+     </div>
+     <div class="logosFooter col-6">
+       <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+       <a href="#"><i class="fa-brands fa-instagram"></i></a>
+     </div>
     </footer>
 
 </body>
