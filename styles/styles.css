@@ -224,6 +224,7 @@ footer {
   padding: 20px;
 }
 
+
 /*CLASES*/
 #clases {
   height: 100vh;
@@ -453,6 +454,26 @@ footer {
   margin: 20px;
 }
 
+/*CLASES*/
+.descripcionClases {
+  padding: 10px;
+}
+
+/*Tabla*/
+.tabla {
+  display: none;
+}
+
+
+/*Imagenes Clases*/
+.imagenesClases {
+  padding: 20px;
+}
+
+.imagenclase {
+  width: 300px;
+  height: 200px;
+}
 }
 
 
