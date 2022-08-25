@@ -159,7 +159,6 @@ footer {
   margin-top: 10px;
 }
 
-
 /*SOBRE MI*/
 #sobreMi {
   height: 100vh;
@@ -229,7 +228,6 @@ footer {
 #clases {
   height: 100vh;
   background-color: #F1FFF9;
-  row-gap: 60px;
 }
 
 .descripcionClases {
@@ -283,11 +281,11 @@ footer {
 
 /*CONTACTO*/
 #contacto {
+  height: 100vh;
   background-color: #F1FFF9;
-  height: 300px;
 }
 
-.formulario {
+.contactoF {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -298,6 +296,9 @@ footer {
   font-size: 20px;
   color: #000000;
   text-align: center;
+  margin: 50px;
+  margin-left: 100px;
+  padding: 20px;
 }
 
 .formulario fieldset label {
@@ -321,6 +322,7 @@ footer {
   font-size: 25px;
   padding: 50px;
   text-align:center;
+  margin: 10px;
 }
 
 .imagenContacto1 {
@@ -382,7 +384,7 @@ footer {
   margin-top: 85px;
 }
 
-/*Imagen y descrpcion*/
+/*Imagen y descripcion*/
 .biografia {
   padding: 10px;
 }
@@ -416,6 +418,41 @@ footer {
   width: 500px;
   padding: 20px;
 }
+
+/*CONTACTO*/
+.contactoF {
+  width: 300px;
+  margin: 10px;
+  margin-left: 0px;
+  padding: 20px;
+}
+
+.formulario fieldset label {
+  padding: 0px;
+  display: block;
+}
+
+.formulario fieldset input {
+  padding: 0px;
+}
+
+.formulario fieldset textarea {
+  padding: 0px;
+}
+/*Datos espacio*/
+.datos {
+  font-size: 25px;
+  padding: 10px;
+  text-align:center;
+  margin: 10px;
+}
+
+.imagenContacto1 {
+  width: 300px;
+  height: 250px;
+  margin: 20px;
+}
+
 }
 
 

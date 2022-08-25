@@ -11,11 +11,11 @@
     <link rel="shortcut icon" href="../images/logo.png">
     <title>Tu Espacio | Yoga</title>
 </head>
-<body id="contacto">
+<body id="contacto" class="container-fluid">
 
     <!--ENCABEZADO-->
-    <header id="header">
-        <nav class="navbar fixed-top">
+    <header id="header" class="row">
+        <nav class="navbar fixed-top col">
             <div class="container-fluid">
               <h1 class="tuEspacio">TU ESPACIO</h1>
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -50,59 +50,61 @@
         </nav>
     </header>
 
-    <!--TITULO CON CIELO DE FONDO-->
-    <section class="tituloNubes">
-        <h2>Contactanos</h2>
+     <!--TITULO CON CIELO DE FONDO-->
+     <section class="tituloNubes row">
+        <h2 class="col">Contactanos</h2>
     </section>
+
+    <main class="row">
+        <!--FORMULARIO-->
+        <section class="contactoF col">
+            <form class="formulario">
+                <fieldset> 
+                    <label for="Nombre">NOMBRE</label>
+                    <input id="Nombre" type="text" placeholder="Ingresá tu nombre">
+                    <label for="Apellido">APELLIDO</label>
+                    <input id="Apellido" type="text" placeholder="Ingresá tu apellido">
+                    <label>GENERO</label>
+                    <select>
+                        <option>Femenino</option>
+                        <option>Masculino</option>
+                        <option>No binario</option>
+                    </select>
+                    <label for="Telefono">TELEFONO</label>
+                    <input id="Telefono" type="tel" placeholder="Ingresá tu teléfono">
+                    <label for="Mail">DIRECCION DE E-MAIL</label>
+                    <input id="Mail" type="text" placeholder="Ingresá tu e-mail">
+                </fieldset>
+                <fieldset>
+                    <label for="Consulta">TU CONSULTA</label>
+                    <textarea id="Consulta" placeholder="Mensaje"></textarea>
+                    <label for="Novedades">Deseo recibir novedades</label>
+                    <input type="checkbox" checked>
+                    <label for="Comunicaciones">Deseo que se contacten por:</label>
+                    <input name="opcion"  type="radio">
+                    <span>WhatsApp</span>
+                    <input name="opcion" type="radio">
+                    <span>E-mail</span>
+                    <input name="opcion" type="radio">
+                    <span>Llamada telefónica</span>
+                </fieldset>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Cancelar">
+            </form> 
+        </section>
+            
+        <!--IMAGENES Y DATOS-->
+        <aside class="datos col">
+            <span class="datosEspacio">Domicilio: Av. 9 de Julio 440 - LINCOLN</span>
+            <span class="datosEspacio">Teléfono: 02355 - 4304255</span>
+            <a href="https://www.google.com/maps/place/Av.+9+de+Julio+440,+Lincoln,+Provincia+de+Buenos+Aires/@-34.8715333,-61.527215,17z/data=!4m5!3m4!1s0x95c744af59b75647:0xa6a9d00f1e3f4d79!8m2!3d-34.8715333!4d-61.5250263" target="_blank">Cómo llegar</a>
+            <div class="imagenContacto">
+                <img class="imagenContacto1" src="../images/yogacontacto3.jpg" alt="mujer realizando yoga">
+                <img class="imagenContacto1" src="../images/yogacontacto2.webp" alt="mujer realizando yoga">
+            </div>
+        </aside>
+    </main>
     
-    <!--FORMULARIO-->
-    <section class="contacto">
-        <form class="formulario">
-            <fieldset> 
-                <label for="Nombre">NOMBRE</label>
-                <input id="Nombre" type="text" placeholder="Ingresá tu nombre">
-                <label for="Apellido">APELLIDO</label>
-                <input id="Apellido" type="text" placeholder="Ingresá tu apellido">
-                <label>GENERO</label>
-                <select>
-                    <option>Femenino</option>
-                    <option>Masculino</option>
-                    <option>No binario</option>
-                </select>
-                <label for="Telefono">TELEFONO</label>
-                <input id="Telefono" type="tel" placeholder="Ingresá tu teléfono">
-                <label for="Mail">DIRECCION DE E-MAIL</label>
-                <input id="Mail" type="text" placeholder="Ingresá tu e-mail">
-            </fieldset>
-            <fieldset>
-                <label for="Consulta">TU CONSULTA</label>
-                <textarea id="Consulta" placeholder="Mensaje"></textarea>
-                <label for="Novedades">Deseo recibir novedades</label>
-                <input type="checkbox" checked>
-                <label for="Comunicaciones">Deseo que se contacten por:</label>
-                <input name="opcion"  type="radio">
-                <span>WhatsApp</span>
-                <input name="opcion" type="radio">
-                <span>E-mail</span>
-                <input name="opcion" type="radio">
-                <span>Llamada telefónica</span>
-            </fieldset>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Cancelar">
-        </form> 
-    </section>
-        
-    <!--IMAGENES Y DATOS-->
-    <aside class="datos">
-        <span class="datosEspacio">Domicilio: Av. 9 de Julio 440 - LINCOLN</span>
-        <span class="datosEspacio">Teléfono: 02355 - 4304255</span>
-        <a href="https://www.google.com/maps/place/Av.+9+de+Julio+440,+Lincoln,+Provincia+de+Buenos+Aires/@-34.8715333,-61.527215,17z/data=!4m5!3m4!1s0x95c744af59b75647:0xa6a9d00f1e3f4d79!8m2!3d-34.8715333!4d-61.5250263" target="_blank">Cómo llegar</a>
-        <div class="imagenContacto">
-            <img class="imagenContacto1" src="../images/yogacontacto3.jpg" alt="mujer realizando yoga">
-            <img class="imagenContacto1" src="../images/yogacontacto2.webp" alt="mujer realizando yoga">
-        </div>
-        
-    </aside>
 
     <!--PIE DE PAGINA-->
     <footer class="row">
