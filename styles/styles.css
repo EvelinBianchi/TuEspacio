@@ -214,21 +214,15 @@ footer {
   font-size: 25px;
   padding: 80px;
   text-align: center;
-}
-/*Imagenes del espacio*/
-.imagenesEspacio {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: center;
-  padding: 10px;
-}
+ }
 
-.imagenesEspacio img {
-  padding: 10px;
-}
+ #carouselExampleFade {
+  align-items: center;
+  }
 
-.imagenesEspacio img:hover {
-  padding: 01px;
+ .carousel-item {
+  width: 800px;
+  padding: 20px;
 }
 
 /*CLASES*/
@@ -408,20 +402,19 @@ footer {
 .descripcionEspacio {
   padding: 10px;
 }
-/*Imagenes del espacio*/
-.imagenesEspacio {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: center;
-}
 
-.imagenesEspacio img {
-  width: 50px;
-  height: 50px;
-}
+/*NUESTRO ESPACIO*/
+.descripcionEspacio {
+  padding: 10px;
+ }
 
-.imagenesEspacio img:hover {
-  padding: 01px;
+ #carouselExampleFade {
+  align-self: center;
+ }
+
+ .carousel-item {
+  width: 500px;
+  padding: 20px;
 }
 }
 
