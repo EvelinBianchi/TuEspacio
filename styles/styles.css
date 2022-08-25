@@ -212,14 +212,15 @@ footer {
   color: #0F2505;
   font-family: garamond cursiva;
   font-size: 25px;
-  padding: 50px;
-  text-align:justify;
+  padding: 80px;
+  text-align: center;
 }
 /*Imagenes del espacio*/
 .imagenesEspacio {
   display: flex;
   flex-flow: wrap;
   justify-content: center;
+  padding: 10px;
 }
 
 .imagenesEspacio img {
@@ -404,12 +405,8 @@ footer {
 }
 
  /*NUESTRO ESPACIO*/
- .descripcionEspacio {
-  color: #0F2505;
-  font-family: garamond cursiva;
-  font-size: 25px;
-  padding: 50px;
-  text-align:justify;
+.descripcionEspacio {
+  padding: 10px;
 }
 /*Imagenes del espacio*/
 .imagenesEspacio {
@@ -419,7 +416,8 @@ footer {
 }
 
 .imagenesEspacio img {
-  padding: 10px;
+  width: 50px;
+  height: 50px;
 }
 
 .imagenesEspacio img:hover {
