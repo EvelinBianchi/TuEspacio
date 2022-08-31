@@ -1,0 +1,23 @@
+header {
+    nav {
+        background-color: #ebf1f5;
+        height: 90px;
+    }
+    div h1 {
+        text-align: center;
+        font-family: $fuentesTitulos; 
+    }
+    div div {
+        background-color: #ebf1f5;
+    }
+    h4 {
+        font-family: $fuentesTitulos;
+        padding: 5px;
+    }
+    div ul li {
+        font-family: $fuentesTitulos;
+        font-size: 20px;
+    }
+}
+
+
