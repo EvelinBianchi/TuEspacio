@@ -27,6 +27,50 @@ header div ul li {
   font-size: 20px;
 }
 
+/*FOOTER*/
+footer {
+  background-color: #C8CA83;
+  margin: 0%;
+  padding: 0%;
+}
+footer div p {
+  font-family: garamond regular;
+  font-size: 20px;
+  color: #ebf1f5;
+  padding: 30px;
+  margin-top: 10px;
+  align-items: center;
+}
+footer a {
+  width: 120px;
+  height: 100px;
+  text-decoration: none;
+  font-size: 40px;
+}
+footer i {
+  color: #F1FFF9;
+  margin-top: 30px;
+  position: relative;
+  left: 500px;
+}
+
+/*VISTA MOBILE*/
+@media screen and (max-width: 599px) {
+  footer {
+    align-content: center;
+    justify-content: center;
+  }
+  footer div p {
+    padding: 0px;
+    margin-top: 1px;
+    text-align: center;
+  }
+  footer div a {
+    height: 50px;
+    font-size: 30px;
+    margin-top: 0px;
+  }
+}
 /*HOME*/
 /*FONDO DE TODAS LAS PAGINAS*/
 .fondo {
@@ -41,7 +85,7 @@ header div ul li {
   background-repeat: no-repeat;
   justify-content: space-around;
   padding: 50px;
-  margin-top: 10px;
+  margin-top: 100px;
 }
 #imagenPrincipal img {
   width: 200px;
