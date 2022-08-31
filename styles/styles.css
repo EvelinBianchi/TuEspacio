@@ -53,6 +53,10 @@ footer i {
   position: relative;
   left: 500px;
 }
+footer i:hover {
+  transform: scale(1.3);
+  transition: all 0.5s;
+}
 
 /*VISTA MOBILE*/
 @media screen and (max-width: 599px) {
@@ -270,5 +274,58 @@ footer i {
   .biografia img {
     width: 250px;
     height: 300px;
+  }
+}
+/*CLASES*/
+.horarios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Tabla*/
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section table {
+  background-color: #C8DBDF;
+  opacity: 80%;
+}
+section tr th {
+  padding: 20px 60px 20px 60px;
+  border: #6ac3d4 solid 2px;
+  font-family: garamond regular;
+  font-size: 30px;
+}
+section tr td {
+  padding: 20px 40px 20px 40px;
+  border: #6ac3d4 solid 2px;
+  font-family: garamond regular;
+  font-size: 30px;
+  text-align: center;
+}
+
+/*Imagenes Clases*/
+aside {
+  display: flex;
+  justify-content: space-around;
+  padding: 80px;
+}
+aside img {
+  width: 500px;
+  height: 300px;
+}
+
+/*VISTA MOBILE*/
+@media screen and (max-width: 599px) {
+  /*CLASES*/
+  .textos {
+    padding: 10px;
+  }
+  /*Tabla*/
+  .tabla {
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */
