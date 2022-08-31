@@ -223,4 +223,52 @@ footer i {
     font-size: 20px;
     padding: 10px;
   }
+}
+/*SOBRE MI*/
+/*Todos los titulos de las paginas excepto HOME*/
+.tituloNubes {
+  font-family: garamond cursiva;
+  color: #000000;
+  background-image: url(../images/campo.jpg);
+  background-size: cover;
+  padding: 20px;
+  font-size: 50px;
+  margin-top: 100px;
+}
+
+/*Imagen y descrpcion*/
+.biografia {
+  justify-content: space-around;
+  padding: 50px;
+}
+.biografia img {
+  width: 400px;
+  height: 500px;
+}
+.biografia img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+.biografia p {
+  width: 500px;
+  padding: 50px;
+  text-align: justify;
+  font-size: 25px;
+}
+
+/*VISTA MOBILE*/
+@media screen and (max-width: 599px) {
+  /*Imagen y descripcion*/
+  .biografia {
+    padding: 10px;
+  }
+  .biografia p {
+    font-size: 20px;
+    width: 600px;
+    padding: 10px;
+  }
+  .biografia img {
+    width: 250px;
+    height: 300px;
+  }
 }/*# sourceMappingURL=styles.css.map */

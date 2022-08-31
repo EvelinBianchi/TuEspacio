@@ -1,0 +1,57 @@
+/*SOBRE MI*/
+/*Todos los titulos de las paginas excepto HOME*/
+.tituloNubes {
+    font-family: $fuenteTextos;
+    color: #000000;
+    background-image: url(../images/campo.jpg);
+    background-size: cover;
+    padding: 20px;
+    font-size: 50px;
+    margin-top: 100px;   
+}
+
+/*Imagen y descrpcion*/
+.biografia {
+    justify-content: space-around;
+    padding: 50px;
+    img {
+        width: 400px;
+        height: 500px; 
+        &:hover {
+            transform: scale(1.1);
+            transition: all 0.5s ;
+
+        } 
+     }
+    
+    p {
+        width: 500px;
+        padding: 50px;
+        text-align:justify;
+        font-size: 25px;
+    }
+ }
+/*VISTA MOBILE*/
+@media screen and (max-width: 599px) {
+  /*Imagen y descripcion*/
+    .biografia {
+      padding: 10px;
+      p {
+        font-size: 20px;
+        width: 600px;
+        padding: 10px;
+
+      }
+      img {
+        width: 250px;
+        height: 300px;
+      }
+    }
+    
+}
+    
+    
+
+  
+  
+  
