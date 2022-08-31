@@ -10,5 +10,153 @@
 /*HOME*/
 /*FONDO DE TODAS LAS PAGINAS*/
 .fondo {
-  background-color: #20a2b9;
+  background-color: #f0f7f8;
+}
+
+/*Imagen home con animacion*/
+#imagenPrincipal {
+  display: flex;
+  background-image: url(../images/campo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: space-around;
+  padding: 50px;
+  margin-top: 100px;
+}
+#imagenPrincipal img {
+  width: 200px;
+  height: 200px;
+}
+
+.yoga1 {
+  -webkit-animation-name: yoga1;
+          animation-name: yoga1;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+}
+
+@-webkit-keyframes yoga1 {
+  0% {
+    transform: translateX(-80px);
+  }
+  50% {
+    transform: translateY(-80px);
+  }
+}
+
+@keyframes yoga1 {
+  0% {
+    transform: translateX(-80px);
+  }
+  50% {
+    transform: translateY(-80px);
+  }
+}
+.yoga2 {
+  -webkit-animation-name: yoga2;
+          animation-name: yoga2;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+}
+
+@-webkit-keyframes yoga2 {
+  0% {
+    transform: translateY(40px);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+}
+
+@keyframes yoga2 {
+  0% {
+    transform: translateY(40px);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+}
+.yoga3 {
+  -webkit-animation-name: yoga3;
+          animation-name: yoga3;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+}
+
+@-webkit-keyframes yoga3 {
+  0% {
+    transform: translateX(80px);
+  }
+  50% {
+    transform: translateY(-80px);
+  }
+}
+
+@keyframes yoga3 {
+  0% {
+    transform: translateX(80px);
+  }
+  50% {
+    transform: translateY(-80px);
+  }
+}
+/*Textos en general de todas las paginas*/
+.textos {
+  font-family: garamond cursiva;
+  font-size: 25px;
+  text-align: center;
+  color: #0F2505;
+  padding: 100px;
+}
+
+@media screen and (max-width: 599px) {
+  /*HOME*/
+  #imagenPrincipal {
+    padding: 10px;
+    margin-top: 90px;
+  }
+  #imagenPrincipal img {
+    width: 150px;
+    height: 150px;
+  }
+  .yoga1 {
+    display: none;
+  }
+  .yoga2 {
+    -webkit-animation-name: yoga2;
+            animation-name: yoga2;
+    -webkit-animation-duration: 8s;
+            animation-duration: 8s;
+    -webkit-animation-iteration-count: initial;
+            animation-iteration-count: initial;
+  }
+  @-webkit-keyframes yoga2 {
+    0% {
+      transform: translateY(30px);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+  }
+  @keyframes yoga2 {
+    0% {
+      transform: translateY(30px);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+  }
+  .yoga3 {
+    display: none;
+  }
+  .textos {
+    font-size: 20px;
+    padding: 10px;
+  }
 }/*# sourceMappingURL=styles.css.map */
