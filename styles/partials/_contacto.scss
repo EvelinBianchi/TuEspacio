@@ -1,0 +1,42 @@
+/*CONTACTO*/
+.formulario {
+    font-family: garamond regular;
+    font-size: 20px;
+    color: #000000;
+    background-color: #C8DBDF;
+    margin-top: 50px;
+    border: #6ac3d4 2px solid;
+  }
+  
+  /*Datos espacio*/
+  .datos {
+    display: flex;
+    flex-direction: column;
+    color: #0F2505;
+    font-family: garamond cursiva;
+    font-size: 25px;
+    padding: 50px;
+    text-align:center;
+    margin: 10px;
+        
+  }
+  
+  .imagenContacto1 {
+    width: 300px;
+    height: 250px;
+    margin: 20px;
+  }
+
+  /*VISTA MOBILE*/
+@media screen and (max-width: 599px) {
+    /*CONTACTO*/
+    .formulario {
+        margin-top: 2px;
+    }
+    .datos {
+        font-size: 20px;
+        padding: 10px;
+    }
+  }
+  
+  

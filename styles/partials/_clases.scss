@@ -6,7 +6,7 @@
   }
   
   /*Tabla*/
-section {
+.horarios {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,13 +31,17 @@ section {
   }
   
   /*Imagenes Clases*/
-aside {
+.imagenesClases {
     display: flex;
     justify-content: space-around;
     padding: 80px;
     img {
         width: 500px;
         height: 300px;
+        &:hover {
+          transform: scale(1.1);
+          transition: all 0.5s ;
+        }
     }
 }
 

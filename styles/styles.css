@@ -70,9 +70,7 @@ footer i:hover {
     text-align: center;
   }
   footer div a {
-    height: 50px;
-    font-size: 30px;
-    margin-top: 0px;
+    display: none;
   }
 }
 /*HOME*/
@@ -284,22 +282,22 @@ footer i:hover {
 }
 
 /*Tabla*/
-section {
+.horarios {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-section table {
+.horarios table {
   background-color: #C8DBDF;
   opacity: 80%;
 }
-section tr th {
+.horarios tr th {
   padding: 20px 60px 20px 60px;
   border: #6ac3d4 solid 2px;
   font-family: garamond regular;
   font-size: 30px;
 }
-section tr td {
+.horarios tr td {
   padding: 20px 40px 20px 40px;
   border: #6ac3d4 solid 2px;
   font-family: garamond regular;
@@ -308,14 +306,18 @@ section tr td {
 }
 
 /*Imagenes Clases*/
-aside {
+.imagenesClases {
   display: flex;
   justify-content: space-around;
   padding: 80px;
 }
-aside img {
+.imagenesClases img {
   width: 500px;
   height: 300px;
+}
+.imagenesClases img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
 }
 
 /*VISTA MOBILE*/
@@ -327,5 +329,44 @@ aside img {
   /*Tabla*/
   .tabla {
     display: none;
+  }
+}
+/*CONTACTO*/
+.formulario {
+  font-family: garamond regular;
+  font-size: 20px;
+  color: #000000;
+  background-color: #C8DBDF;
+  margin-top: 50px;
+  border: #6ac3d4 2px solid;
+}
+
+/*Datos espacio*/
+.datos {
+  display: flex;
+  flex-direction: column;
+  color: #0F2505;
+  font-family: garamond cursiva;
+  font-size: 25px;
+  padding: 50px;
+  text-align: center;
+  margin: 10px;
+}
+
+.imagenContacto1 {
+  width: 300px;
+  height: 250px;
+  margin: 20px;
+}
+
+/*VISTA MOBILE*/
+@media screen and (max-width: 599px) {
+  /*CONTACTO*/
+  .formulario {
+    margin-top: 2px;
+  }
+  .datos {
+    font-size: 20px;
+    padding: 10px;
   }
 }/*# sourceMappingURL=styles.css.map */
