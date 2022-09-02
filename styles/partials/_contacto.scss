@@ -5,7 +5,13 @@
     color: #000000;
     background-color: #C8DBDF;
     margin-top: 50px;
-    border: #6ac3d4 2px solid;
+    border: #84bcc7 2px solid;
+    form div button {
+      padding: 8px 20px 8px 20px;
+      font-size: 20px;
+      margin-top: 20px;
+      background-color: #84bcc7;
+    }
   }
   
   /*Datos espacio*/
@@ -37,6 +43,11 @@
         font-size: 20px;
         padding: 10px;
     }
+    .imagenContacto1 {
+      width: 250px;
+      height: 200px;
+      margin: 5px;
   }
+   }
   
   
