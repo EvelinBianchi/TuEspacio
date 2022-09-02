@@ -25,10 +25,9 @@
      }
     
     p {
+        @extend %textoBase;
         width: 500px;
-        padding: 50px;
         text-align:justify;
-        font-size: 25px;
     }
  }
 /*VISTA MOBILE*/

@@ -1,21 +1,21 @@
 header {
     nav {
-        background-color: #ebf1f5;
+        background-color: $colorHeader;
         height: 90px;
     }
     div h1 {
         text-align: center;
-        font-family: $fuentesTitulos; 
+        font-family: $fuenteTitulos; 
     }
     div div {
-        background-color: #ebf1f5;
+        background-color: $colorHeader;
     }
     h4 {
-        font-family: $fuentesTitulos;
+        font-family: $fuenteTitulos;
         padding: 5px;
     }
     div ul li {
-        font-family: $fuentesTitulos;
+        font-family: $fuenteTitulos;
         font-size: 20px;
     }
 }

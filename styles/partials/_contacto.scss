@@ -1,16 +1,16 @@
 /*CONTACTO*/
 .formulario {
-    font-family: garamond regular;
+    font-family: map-get($fuentes, fuenteTitulos);
     font-size: 20px;
-    color: #000000;
-    background-color: #C8DBDF;
+    color: map-get($colors, colorTextos);
+    background-color: map-get($colors, colorFormulario);
     margin-top: 50px;
-    border: #84bcc7 2px solid;
+    border: map-get($colors, colorBorder) 2px solid;
     form div button {
       padding: 8px 20px 8px 20px;
       font-size: 20px;
       margin-top: 20px;
-      background-color: #84bcc7;
+      background-color: map-get($colors, colorBorder);
     }
   }
   
@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: column;
     color: #0F2505;
-    font-family: garamond cursiva;
+    font-family: map-get($fuentes, fuenteTextos);
     font-size: 25px;
     padding: 50px;
     text-align:center;
