@@ -15,14 +15,13 @@
     justify-content: space-around;
     padding: 50px;
     img {
-        width: 400px;
-        height: 500px; 
+      @include imagenes ($width: 400px, $height: 500px, $radius:true)
+    }
         &:hover {
             transform: scale(1.1);
             transition: all 0.5s ;
-
         } 
-     }
+    
     
     p {
         @extend %textoBase;
@@ -42,8 +41,7 @@
 
       }
       img {
-        width: 250px;
-        height: 300px;
+        @include imagenes ($width: 250px, $height: 300px)
       }
     }
     
