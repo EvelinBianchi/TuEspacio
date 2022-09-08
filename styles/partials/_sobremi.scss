@@ -15,7 +15,7 @@
     justify-content: space-around;
     padding: 50px;
     img {
-      @include imagenes ($width: 400px, $height: 500px, $radius:true)
+      @include imagenes ($width: 400px, $height: 500px, $margin:false)
     }
         &:hover {
             transform: scale(1.1);

@@ -1,9 +1,9 @@
-@mixin imagenes ($width, $height, $radius:false) { 
+@mixin imagenes ($width, $height, $margin: true) { 
     width: $width;
     height: $height;   
-    @if $radius {
-        border-radius:05px;
+    @if ($margin) {
+        margin: 20px;
     } @else {
-        border-radius: 0;
+        margin: 0px;
     }
 }
