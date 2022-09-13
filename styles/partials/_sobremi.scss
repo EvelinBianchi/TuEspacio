@@ -3,7 +3,7 @@
 .tituloNubes {
     font-family: $fuenteTextos;
     color: #000000;
-    background-image: url(../images/campo.jpg);
+    background-image: url(/images/cielo.jpg);
     background-size: cover;
     padding: 20px;
     font-size: 50px;
@@ -13,16 +13,10 @@
 /*Imagen y descrpcion*/
 .biografia {
     justify-content: space-around;
-    padding: 50px;
+    margin: 50px;
     img {
       @include imagenes ($width: 400px, $height: 500px, $margin:false)
     }
-        &:hover {
-            transform: scale(1.1);
-            transition: all 0.5s ;
-        } 
-    
-    
     p {
         @extend %textoBase;
         width: 500px;
@@ -34,6 +28,7 @@
   /*Imagen y descripcion*/
     .biografia {
       padding: 10px;
+      margin: 10px;
       p {
         font-size: 20px;
         width: 600px;

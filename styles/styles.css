@@ -1,3 +1,10 @@
+.textos, .biografia p, .descripcion {
+  font-family: garamond cursiva;
+  font-size: 25px;
+  text-align: center;
+  color: #000000;
+}
+
 /*FUENTES*/
 @font-face {
   font-family: garamond regular;
@@ -8,7 +15,7 @@
   src: url(../fonts/EBGaramond-Italic.ttf);
 }
 header nav {
-  background-color: #ebf1f5;
+  background-color: #F7F3EF;
   height: 90px;
 }
 header div h1 {
@@ -16,7 +23,7 @@ header div h1 {
   font-family: garamond regular;
 }
 header div div {
-  background-color: #ebf1f5;
+  background-color: #F7F3EF;
 }
 header h4 {
   font-family: garamond regular;
@@ -29,7 +36,7 @@ header div ul li {
 
 /*FOOTER*/
 footer {
-  background-color: #C8CA83;
+  background-color: #B19A88;
   margin: 0%;
   padding: 0%;
 }
@@ -76,22 +83,22 @@ footer i:hover {
 /*HOME*/
 /*FONDO DE TODAS LAS PAGINAS*/
 .fondo {
-  background-color: #f0f7f8;
+  background-color: #FFFFFF;
 }
 
 /*Imagen home con animacion*/
 #imagenPrincipal {
   display: flex;
-  background-image: url(../images/campo.jpg);
+  background-image: url(/images/cielo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   justify-content: space-around;
-  padding: 50px;
+  padding: 40px;
   margin-top: 100px;
 }
 #imagenPrincipal img {
-  width: 200px;
-  height: 200px;
+  width: 230px;
+  height: 230px;
 }
 
 .yoga1 {
@@ -172,13 +179,9 @@ footer i:hover {
     transform: translateY(-80px);
   }
 }
-/*Textos en general de todas las paginas*/
-.textos {
-  font-family: garamond cursiva;
-  font-size: 25px;
-  text-align: center;
-  color: #0F2505;
-  padding: 100px;
+/*Texto*/
+.descripcion {
+  margin: 50px;
 }
 
 @media screen and (max-width: 599px) {
@@ -204,26 +207,25 @@ footer i:hover {
   }
   @-webkit-keyframes yoga2 {
     0% {
-      transform: translateY(30px);
+      transform: translateY(20px);
     }
     50% {
-      transform: translateY(-30px);
+      transform: translateY(-20px);
     }
   }
   @keyframes yoga2 {
     0% {
-      transform: translateY(30px);
+      transform: translateY(20px);
     }
     50% {
-      transform: translateY(-30px);
+      transform: translateY(-20px);
     }
   }
   .yoga3 {
     display: none;
   }
   .textos {
-    font-size: 20px;
-    padding: 10px;
+    margin: 5px;
   }
 }
 /*SOBRE MI*/
@@ -231,7 +233,7 @@ footer i:hover {
 .tituloNubes {
   font-family: garamond cursiva;
   color: #000000;
-  background-image: url(../images/campo.jpg);
+  background-image: url(/images/cielo.jpg);
   background-size: cover;
   padding: 20px;
   font-size: 50px;
@@ -241,21 +243,16 @@ footer i:hover {
 /*Imagen y descrpcion*/
 .biografia {
   justify-content: space-around;
-  padding: 50px;
+  margin: 50px;
 }
 .biografia img {
   width: 400px;
   height: 500px;
-}
-.biografia img:hover {
-  transform: scale(1.1);
-  transition: all 0.5s;
+  margin: 0px;
 }
 .biografia p {
   width: 500px;
-  padding: 50px;
   text-align: justify;
-  font-size: 25px;
 }
 
 /*VISTA MOBILE*/
@@ -263,6 +260,7 @@ footer i:hover {
   /*Imagen y descripcion*/
   .biografia {
     padding: 10px;
+    margin: 10px;
   }
   .biografia p {
     font-size: 20px;
@@ -272,8 +270,14 @@ footer i:hover {
   .biografia img {
     width: 250px;
     height: 300px;
+    margin: 20px;
   }
 }
+/*Textos en general de todas las paginas*/
+.textos {
+  padding: 100px;
+}
+
 /*CLASES*/
 .horarios {
   display: flex;
@@ -288,18 +292,18 @@ footer i:hover {
   align-items: center;
 }
 .horarios table {
-  background-color: #C8DBDF;
+  background-color: #DDD3CE;
   opacity: 80%;
 }
 .horarios tr th {
   padding: 20px 60px 20px 60px;
-  border: #6ac3d4 solid 2px;
+  border: #C2B5A9 solid 2px;
   font-family: garamond regular;
   font-size: 30px;
 }
 .horarios tr td {
   padding: 20px 40px 20px 40px;
-  border: #6ac3d4 solid 2px;
+  border: #C2B5A9 solid 2px;
   font-family: garamond regular;
   font-size: 30px;
   text-align: center;
@@ -313,15 +317,18 @@ footer i:hover {
 }
 .imagenesClases img {
   width: 500px;
-  height: 300px;
-}
-.imagenesClases img:hover {
-  transform: scale(1.1);
-  transition: all 0.5s;
+  height: 350px;
 }
 
 /*VISTA MOBILE*/
 @media screen and (max-width: 599px) {
+  .imagenesClases {
+    padding: 10px;
+  }
+  .imagenesClases img {
+    width: 300px;
+    height: 250px;
+  }
   /*CLASES*/
   .textos {
     padding: 10px;
@@ -331,37 +338,50 @@ footer i:hover {
     display: none;
   }
 }
+.contacto {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 /*CONTACTO*/
 .formulario {
   font-family: garamond regular;
   font-size: 20px;
-  color: #0F2505;
-  background-color: #C8DBDF;
+  color: #000000;
+  background-color: #C3A48C;
   margin-top: 50px;
-  border: #84bcc7 2px solid;
+  border: #F7F3EF 5px solid;
 }
 .formulario form div button {
   padding: 8px 20px 8px 20px;
   font-size: 20px;
   margin-top: 20px;
-  background-color: #84bcc7;
+  background-color: #F7F3EF;
 }
 
 /*Datos espacio*/
 .datos {
   display: flex;
   flex-direction: column;
-  color: #0F2505;
+  color: #000000;
   font-family: garamond cursiva;
   font-size: 25px;
   padding: 50px;
   text-align: center;
   margin: 10px;
 }
+.datos a {
+  text-decoration: none;
+  color: #000000;
+}
+.datos a:hover {
+  color: #DDD3CE;
+  transition: all 0.5s;
+}
 
 .imagenContacto1 {
-  width: 300px;
-  height: 250px;
+  width: 500px;
+  height: 600px;
   margin: 20px;
 }
 
@@ -369,15 +389,13 @@ footer i:hover {
 @media screen and (max-width: 599px) {
   /*CONTACTO*/
   .formulario {
-    margin-top: 2px;
+    margin: 20px;
   }
   .datos {
-    font-size: 20px;
+    font-size: 25px;
     padding: 10px;
   }
   .imagenContacto1 {
-    width: 250px;
-    height: 200px;
-    margin: 5px;
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -1,3 +1,8 @@
+.contacto {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 /*CONTACTO*/
 .formulario {
     font-family: map-get($fuentes, fuenteTitulos);
@@ -5,7 +10,7 @@
     color: map-get($colors, colorTextos);
     background-color: map-get($colors, colorFormulario);
     margin-top: 50px;
-    border: map-get($colors, colorBorder) 2px solid;
+    border: map-get($colors, colorBorder) 5px solid;
     form div button {
       padding: 8px 20px 8px 20px;
       font-size: 20px;
@@ -18,34 +23,39 @@
   .datos {
     display: flex;
     flex-direction: column;
-    color: #0F2505;
+    color: #000000;
     font-family: map-get($fuentes, fuenteTextos);
     font-size: 25px;
     padding: 50px;
     text-align:center;
     margin: 10px;
+      a {
+        text-decoration: none;
+        color: #000000;
+        &:hover {
+          color: #DDD3CE ;
+          transition: all 0.5s ;
+      }
+      }
         
   }
   
   .imagenContacto1 {
-    @include imagenes ($width:300px, $height:250px, $margin:true)
+    @include imagenes ($width:500px, $height:600px, $margin:true)
   }
   
-
   /*VISTA MOBILE*/
 @media screen and (max-width: 599px) {
     /*CONTACTO*/
     .formulario {
-        margin-top: 2px;
+        margin: 20px;
     }
     .datos {
-        font-size: 20px;
+        font-size: 25px;
         padding: 10px;
     }
     .imagenContacto1 {
-      width: 250px;
-      height: 200px;
-      margin: 5px;
+      display: none;
   }
    }
   

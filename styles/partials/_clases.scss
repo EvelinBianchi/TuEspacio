@@ -1,3 +1,9 @@
+/*Textos en general de todas las paginas*/
+.textos {
+  @extend %textoBase;
+  padding: 100px;
+  }
+
 /*CLASES*/
 .horarios {
     display: flex;
@@ -11,18 +17,18 @@
     flex-direction: column;
     align-items: center;
         table {
-            background-color: #C8DBDF;
+            background-color: #DDD3CE;
             opacity: 80%;
             }
             tr th {
                 padding: 20px 60px 20px 60px;
-                border: #6ac3d4 solid 2px;
+                border: #C2B5A9 solid 2px;
                 font-family: garamond regular;
                 font-size: 30px;
             }
             tr td {
                 padding: 20px 40px 20px 40px;
-                border: #6ac3d4 solid 2px;
+                border: #C2B5A9 solid 2px;
                 font-family: garamond regular;
                 font-size: 30px;
                 text-align: center;
@@ -37,17 +43,20 @@
     padding: 80px;
     img {
         width: 500px;
-        height: 300px;
-        &:hover {
-          transform: scale(1.1);
-          transition: all 0.5s ;
+        height: 350px;
+      }
         }
-    }
-}
 
 /*VISTA MOBILE*/
 @media screen and (max-width: 599px) {
-       
+  
+  .imagenesClases {
+    padding: 10px;
+    img {
+      width: 300px;
+      height: 250px;
+    }
+  }
     /*CLASES*/
     .textos {
       padding: 10px;
@@ -57,7 +66,8 @@
     .tabla {
       display: none;
     } 
-}
+  
+ }
     
     
     
