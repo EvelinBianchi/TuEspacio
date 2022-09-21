@@ -4,24 +4,11 @@
   padding: 100px;
 }
 
-/*Tabla*/
 .horarios {
-      display: flex;
-      margin: 20px ;
-  table {
-    background-color: #C3A48C;
-    width: 600px;
-    height: 200px;
-    position: relative;
-    align-content: center
-    }
-      tr th {
-       @extend %contenidoTabla;  
-    }
-       tr td {
-        @extend %contenidoTabla;
-   }
-   }
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
 
   /*Imagenes Clases*/
 .imagenesClases {
@@ -31,6 +18,10 @@
     img {
         width: 500px;
         height: 350px;
+        &:hover {
+          transform: scale(1.1);
+          transition: all 0.5s ;
+          }
       }
     }
 
@@ -42,6 +33,7 @@
     img {
       width: 300px;
       height: 250px;
+      margin: 10px;
     }
   }
     /*CLASES*/

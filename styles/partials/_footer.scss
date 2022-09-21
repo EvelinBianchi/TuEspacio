@@ -8,12 +8,15 @@ footer {
 
     p {
         font-family: garamond regular;
-        font-size: 20px;
+        font-size: 25px;
         color: #ebf1f5;
+        padding: 30px;
+        text-align: center;
         }
     a {
         text-decoration: none;
         font-size: 40px;    
+        align-self: center;
         }
 
         i {
@@ -25,26 +28,21 @@ footer {
         }
 }
 
+.whatsapp {
+    text-align: end;
+}
+
+
 /*VISTA MOBILE*/
 @media screen and (max-width: 599px) { 
-    div p {
-        padding: 30px;
-        margin-top: 10px;
-        align-items: center;
-     }
-        a {
-            width: 120px;
-            height: 100px;
-            text-decoration: none;
-            font-size: 40px;    
-         }
-
-            i {
-                margin-left: 1px;
-                margin-top: 3px;
-                left: 1px; 
-                align-items: center;
-            }    
+    footer {
+        flex-direction: column;
+        align-content: center;
+    }
+    
+    .whatsapp {
+        text-align: start;
+    }
 }
     
     

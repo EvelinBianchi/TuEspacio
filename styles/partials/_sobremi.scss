@@ -18,6 +18,14 @@
     img {
       @include imagenes ($width: 400px, $height: 500px, $margin:false) 
     }
+
+      img {
+        &:hover {
+          transform: scale(1.1);
+          transition: all 0.5s ;
+          }
+      }
+   
     p {
         @extend %textoBase;
         width: 500px;
