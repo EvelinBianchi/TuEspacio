@@ -2,6 +2,7 @@
 /*Todos los titulos de las paginas excepto HOME*/
 .tituloNubes {
     font-family: $fuenteTextos;
+    text-align: center;
     color: #000000;
     background-image: url(/images/cielo.jpg);
     background-size: cover;
@@ -15,12 +16,16 @@
     justify-content: space-around;
     margin: 50px;
     img {
-      @include imagenes ($width: 400px, $height: 500px, $margin:false)
+      @include imagenes ($width: 400px, $height: 500px, $margin:false) 
     }
     p {
         @extend %textoBase;
         width: 500px;
         text-align:justify;
+    }
+    a {
+      color: #B19A88 ;
+      text-decoration: none;
     }
  }
 /*VISTA MOBILE*/
@@ -30,10 +35,8 @@
       padding: 10px;
       margin: 10px;
       p {
-        font-size: 20px;
         width: 600px;
         padding: 10px;
-
       }
       img {
         @include imagenes ($width: 250px, $height: 300px)

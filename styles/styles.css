@@ -39,26 +39,21 @@ footer {
   background-color: #B19A88;
   margin: 0%;
   padding: 0%;
+  display: flex;
+  align-content: space-between;
 }
-footer div p {
+footer p {
   font-family: garamond regular;
   font-size: 20px;
   color: #ebf1f5;
-  padding: 30px;
-  margin-top: 10px;
-  align-items: center;
 }
 footer a {
-  width: 120px;
-  height: 100px;
   text-decoration: none;
   font-size: 40px;
 }
 footer i {
   color: #F1FFF9;
-  margin-top: 30px;
-  position: relative;
-  left: 500px;
+
 }
 footer i:hover {
   transform: scale(1.3);
@@ -67,16 +62,7 @@ footer i:hover {
 
 /*VISTA MOBILE*/
 @media screen and (max-width: 599px) {
-  footer {
-    align-content: center;
-    justify-content: center;
-  }
   footer div p {
-    padding: 0px;
-    margin-top: 1px;
-    text-align: center;
-  }
-  footer div a {
     display: none;
   }
 }
@@ -224,14 +210,15 @@ footer i:hover {
   .yoga3 {
     display: none;
   }
-  .textos {
-    margin: 5px;
+  .descripcion {
+    margin: 10px;
   }
 }
 /*SOBRE MI*/
 /*Todos los titulos de las paginas excepto HOME*/
 .tituloNubes {
   font-family: garamond cursiva;
+  text-align: center;
   color: #000000;
   background-image: url(../images/cielo.jpg);
   background-size: cover;
@@ -254,6 +241,10 @@ footer i:hover {
   width: 500px;
   text-align: justify;
 }
+.biografia a {
+  color: #B19A88;
+  text-decoration: none;
+}
 
 /*VISTA MOBILE*/
 @media screen and (max-width: 599px) {
@@ -263,7 +254,6 @@ footer i:hover {
     margin: 10px;
   }
   .biografia p {
-    font-size: 20px;
     width: 600px;
     padding: 10px;
   }
@@ -278,35 +268,26 @@ footer i:hover {
   padding: 100px;
 }
 
-/*CLASES*/
-.horarios {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 /*Tabla*/
 .horarios {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px;
+  margin: 20px;
 }
 .horarios table {
-  background-color: #DDD3CE;
-  opacity: 80%;
+  background-color: #C3A48C;
+  width: 600px;
+  height: 200px;
 }
 .horarios tr th {
-  padding: 20px 60px 20px 60px;
   border: #C2B5A9 solid 2px;
   font-family: garamond regular;
-  font-size: 30px;
+  font-size: 25px;
+  text-align: center;
+  color: #000000;
 }
 .horarios tr td {
-  padding: 20px 40px 20px 40px;
   border: #C2B5A9 solid 2px;
   font-family: garamond regular;
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
 }
 
@@ -333,10 +314,6 @@ footer i:hover {
   /*CLASES*/
   .textos {
     padding: 10px;
-  }
-  /*Tabla*/
-  .tabla {
-    display: none;
   }
 }
 .contacto {
@@ -388,9 +365,6 @@ footer i:hover {
 
 /*VISTA MOBILE*/
 @media screen and (max-width: 599px) {
-  .descripcionEspacio {
-    padding: 10px;
-  }
   .formulario {
     margin: 20px;
   }

@@ -3,51 +3,48 @@ footer {
     background-color:$colorDeFooter;
     margin: 0%;
     padding: 0%;
+    display: flex;
+    align-content: space-between;
 
-        div p {
-            font-family: garamond regular;
-            font-size: 20px;
-            color: #ebf1f5;
-            padding: 30px;
-            margin-top: 10px;
-            align-items: center;
-         }
+    p {
+        font-family: garamond regular;
+        font-size: 20px;
+        color: #ebf1f5;
+        }
+    a {
+        text-decoration: none;
+        font-size: 40px;    
+        }
 
-            a {
-                width: 120px;
-                height: 100px;
-                text-decoration: none;
-                font-size: 40px;    
-             }
-
-                i {
-                    color: #F1FFF9;
-                    margin-top: 30px;
-                    position: relative;
-                    left: 500px; 
-                    &:hover {
-                        transform: scale(1.3);
-                        transition: all 0.5s ;
-                    }
-                }
+        i {
+            color: #F1FFF9;
+            &:hover {
+            transform: scale(1.3);
+            transition: all 0.5s ;
+            }
+        }
 }
 
 /*VISTA MOBILE*/
 @media screen and (max-width: 599px) { 
-    footer {
-      align-content: center;
-      justify-content:center;
+    div p {
+        padding: 30px;
+        margin-top: 10px;
+        align-items: center;
+     }
+        a {
+            width: 120px;
+            height: 100px;
+            text-decoration: none;
+            font-size: 40px;    
+         }
 
-      div p {
-        padding: 0px;
-        margin-top: 1px;
-        text-align: center;
-      }
-
-        div a {
-            display: none;
-      }
-    }       
+            i {
+                margin-left: 1px;
+                margin-top: 3px;
+                left: 1px; 
+                align-items: center;
+            }    
 }
     
     
