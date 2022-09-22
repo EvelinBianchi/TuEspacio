@@ -1,20 +1,36 @@
 /*Textos en general de todas las paginas*/
 .textos {
   @extend %textoBase;
-  padding: 100px;
+  padding: 50px;
+  width: 1000px;
 }
 
-.horarios {
+.clases {
   display: flex;
   justify-content: center;
-  margin: 20px;
+  padding: 10px;
+  div {
+    color: $colorTextos;
+    font-family: $fuenteTitulos;
+    font-weight: bold;
+    background-color: $colorHeader;
+  }
+    .titulo {
+      font-size: 25px;
+      border: 5px solid $colorBorder;
+    }
+
+    ul li {
+      font-size: 20px;
+      
+    }
 }
+
 
   /*Imagenes Clases*/
 .imagenesClases {
-    display: flex;
-    justify-content: space-around;
-    padding: 80px;
+    justify-content:space-evenly;
+    padding: 30px;
     img {
         width: 500px;
         height: 350px;
@@ -27,6 +43,8 @@
 
 /*VISTA MOBILE*/
 @media screen and (max-width: 599px) {
+
+ 
   
   .imagenesClases {
     padding: 10px;

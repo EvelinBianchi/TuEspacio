@@ -10,7 +10,6 @@ footer {
         font-family: garamond regular;
         font-size: 25px;
         color: #ebf1f5;
-        padding: 30px;
         text-align: center;
         }
     a {
@@ -33,17 +32,6 @@ footer {
 }
 
 
-/*VISTA MOBILE*/
-@media screen and (max-width: 599px) { 
-    footer {
-        flex-direction: column;
-        align-content: center;
-    }
-    
-    .whatsapp {
-        text-align: start;
-    }
-}
     
     
   

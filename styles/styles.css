@@ -46,7 +46,6 @@ footer p {
   font-family: garamond regular;
   font-size: 25px;
   color: #ebf1f5;
-  padding: 30px;
   text-align: center;
 }
 footer a {
@@ -66,16 +65,6 @@ footer i:hover {
   text-align: end;
 }
 
-/*VISTA MOBILE*/
-@media screen and (max-width: 599px) {
-  footer {
-    flex-direction: column;
-    align-content: center;
-  }
-  .whatsapp {
-    text-align: start;
-  }
-}
 /*HOME*/
 /*FONDO DE TODAS LAS PAGINAS*/
 .fondo {
@@ -279,20 +268,33 @@ footer i:hover {
 }
 /*Textos en general de todas las paginas*/
 .textos {
-  padding: 100px;
+  padding: 50px;
+  width: 1000px;
 }
 
-.horarios {
+.clases {
   display: flex;
   justify-content: center;
-  margin: 20px;
+  padding: 10px;
+}
+.clases div {
+  color: #000000;
+  font-family: garamond regular;
+  font-weight: bold;
+  background-color: #F7F3EF;
+}
+.clases .titulo {
+  font-size: 25px;
+  border: 5px solid #C2B5A9;
+}
+.clases ul li {
+  font-size: 20px;
 }
 
 /*Imagenes Clases*/
 .imagenesClases {
-  display: flex;
-  justify-content: space-around;
-  padding: 80px;
+  justify-content: space-evenly;
+  padding: 30px;
 }
 .imagenesClases img {
   width: 500px;
@@ -318,6 +320,11 @@ footer i:hover {
     padding: 10px;
   }
 }
+.descripcionEspacio {
+  display: flex;
+  justify-content: center;
+}
+
 .contacto {
   display: flex;
   justify-content: space-evenly;
